@@ -7,7 +7,7 @@ function workingWindow(dateStr){
   const d=new Date(`${dateStr}T12:00:00+02:00`);
   const day=d.getDay();
   if(day===0||day===6) return null;
-  if(day===5) return [570,960];   // Friday 09:30–16:00
+  if(day===5) return [570,1080];   // Friday 09:30–16:00
   return [570,1080];              // Mon–Thu 09:30–18:00
 }
 function overlaps(a0,a1,b0,b1){return a0<b1 && b0<a1}
