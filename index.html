@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>FlowFix | Fontanería fácil en Avilés y Castrillón</title>
-<meta name="description" content="Pequeñas reparaciones e instalaciones de fontanería en Avilés y Castrillón. Grifos de baño y cocina, duchas, inodoros, termos eléctricos y más. Reserva por WhatsApp.">
+<meta name="description" content="Fontanería para pequeños trabajos en Avilés y Castrillón. Grifos de baño y cocina, duchas, inodoros, termos eléctricos y más. Reserva por WhatsApp.">
 <link rel="canonical" href="https://www.flowfix.es/">
 <meta name="theme-color" content="#071d38">
 <style>
@@ -58,6 +58,50 @@ footer{background:var(--navy);color:#c7d6e7;padding:34px 0}.foot{display:grid;gr
 .review-cta{margin-top:18px;padding:18px 20px;border-radius:14px;background:linear-gradient(90deg,#f1f7ff,#fff);border:1px solid #cfe0fb;display:flex;justify-content:space-between;gap:16px;align-items:center}
 .review-cta strong{display:block;margin-bottom:4px}
 @media(max-width:800px){.reviews{grid-template-columns:1fr}.review-cta{flex-direction:column;align-items:flex-start}}
+
+/* STREAMLINED FLOWFIX */
+.hero{padding:34px 0}
+.hero h1{font-size:48px;max-width:650px}
+.hero p{font-size:17px;max-width:650px}
+.hero-photo img{min-height:310px}
+.section{padding:34px 0}
+.head{margin-bottom:18px}
+.head h2{font-size:30px}
+.services{gap:10px}
+.service{border-radius:14px}
+.service-body{padding:12px}
+.service p{display:none}
+.service .from{margin-top:7px}
+.service .price{font-size:21px}
+.assist{margin-top:12px;padding:14px 16px}
+.bookwrap{padding:38px 0}
+.booking{border-radius:16px}
+.form{padding:20px}
+.summary{padding:22px}
+.field{margin-bottom:12px}
+.notice{padding:9px}
+.review-cta{margin-top:0}
+footer{padding:26px 0}
+@media(max-width:900px){
+  .hero h1{font-size:40px}
+  .hero-grid{gap:20px}
+}
+@media(max-width:650px){
+  .hero{padding:20px 0 26px}
+  .hero h1{font-size:34px}
+  .hero p{font-size:16px}
+  .hero-photo img{min-height:190px;max-height:240px}
+  .services{grid-template-columns:1fr 1fr}
+  .service-body{padding:10px}
+  .service h3{font-size:14px}
+  .service .price{font-size:18px}
+  .service .vat{font-size:10px}
+  .bookwrap{padding:26px 0}
+  .summary{padding:18px}
+}
+
+.phone-mini{font-size:12px;font-weight:700;opacity:.82;white-space:nowrap}
+@media(max-width:700px){.phone-mini{display:none}}
 </style>
 </head>
 <body>
@@ -80,15 +124,13 @@ footer{background:var(--navy);color:#c7d6e7;padding:34px 0}.foot{display:grid;gr
   <textarea name="details"></textarea>
 </form>
 
-<header><div class="container nav"><div class="brand">FLOW<span>FIX</span></div><div class="nav-actions"><button class="lang active-lang" id="langES" onclick="setLang('es')">ES</button><button class="lang" id="langEN" onclick="setLang('en')">EN</button><button class="cta desktop" onclick="goBook()">Reservar ahora</button></div></div></header>
+<header><div class="container nav"><div class="brand">FLOW<span>FIX</span></div><div class="nav-actions"><a class="phone-mini" href="tel:+34627128765">Contacto: 627 128 765</a><button class="lang active-lang" id="langES" onclick="setLang('es')">ES</button><button class="lang" id="langEN" onclick="setLang('en')">EN</button><button class="cta desktop" onclick="goBook()">Reservar ahora</button></div></div></header>
 
-<section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="pill">📍 Avilés · Castrillón</span><h1 id="heroTitle">¿Un trabajo pequeño de fontanería? <em>Lo hacemos.</em></h1><p id="heroText">FlowFix se especializa en trabajos domésticos que a menudo son difíciles de reservar: grifos de baño y cocina, duchas, reparaciones de cisternas, termos eléctricos y pequeñas reparaciones.</p><div class="notice" style="display:inline-block;margin-top:12px;background:#edf8f1;border-color:#b9e4d0;color:#145c41"><strong>✓ Sin pago por adelantado</strong> — paga cuando el trabajo esté terminado.</div><div class="hero-actions"><button class="cta" onclick="goBook()">Reservar ahora</button><button class="outline" onclick="document.getElementById('services').scrollIntoView()">Ver servicios</button></div></div><div class="hero-photo"><img src="hero-plumber.jpg" alt="FlowFix plumber carrying out a small plumbing repair"></div></div></section>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="pill">📍 Avilés · Castrillón</span><h1 id="heroTitle">Fontanería fácil. <em>Reserva en minutos.</em></h1><p id="heroText">Pequeñas reparaciones e instalaciones en Avilés y Castrillón. Elige el trabajo, solicita día y hora y espera nuestra confirmación.</p><div class="notice" style="display:inline-block;margin-top:12px;background:#edf8f1;border-color:#b9e4d0;color:#145c41"><strong>✓ Sin pago por adelantado</strong> — paga cuando el trabajo esté terminado.</div><div class="hero-actions"><button class="cta" onclick="goBook()">Reservar ahora</button><a class="outline" href="https://wa.me/34627128765" target="_blank">WhatsApp</a></div></div><div class="hero-photo"><img src="hero-plumber.jpg" alt="FlowFix plumber carrying out a small plumbing repair"></div></div></section>
 
-<section class="section soft" id="services"><div class="container"><div class="head"><h2 id="servicesTitle">¿Qué necesitas?</h2><p id="servicesSub">Elige el trabajo que mejor se adapte a tu situación.</p></div><div class="services" id="cards"></div><div class="assist"><div><strong>¿No tienes claro qué reparación necesitas?</strong><br><span style="color:var(--muted)">Envíanos una foto por WhatsApp y te orientamos.</span></div><button class="outline" onclick="chooseService(5)">Enviar foto por WhatsApp →</button></div></div></section>
+<section class="section soft" id="services"><div class="container"><div class="head"><h2 id="servicesTitle">Elige tu servicio</h2><p id="servicesSub">Precios claros, sin pago por adelantado.</p></div><div class="services" id="cards"></div><div class="assist"><div><strong>¿No tienes claro qué reparación necesitas?</strong><br><span style="color:var(--muted)">Envíanos una foto por WhatsApp y te orientamos.</span></div><button class="outline" onclick="chooseService(5)">Enviar foto por WhatsApp →</button></div></div></section>
 
-<section class="section"><div class="container"><div class="head"><h2>Cómo funciona</h2></div><div class="steps"><div class="step"><div class="num">1</div><h3>Elige tu servicio</h3><p>Selecciona el trabajo que necesitas.</p></div><div class="step"><div class="num">2</div><h3>Producto y cita</h3><p>Usa el tuyo o deja que FlowFix lo suministre.</p></div><div class="step"><div class="num">3</div><h3>WhatsApp y confirmación</h3><p>Envías ubicación/fotos y FlowFix confirma la cita.</p></div></div><div class="banner"><div><h3>El fontanero que sí viene para los trabajos pequeños.</h3><p>Precios claros · Sin sorpresas · Sin emergencias ni fuera de horario</p></div><div class="area">📍 Solo Avilés y Castrillón</div></div></div></section>
-
-<section class="bookwrap" id="book"><div class="container"><div class="head"><h2 id="bookTitle">Reserva tu servicio</h2><p>Reserva en unos minutos. Sin pago por adelantado.</p></div><div class="booking"><div class="form"><div class="success" id="success"></div>
+<section class="bookwrap" id="book"><div class="container"><div class="head"><h2 id="bookTitle">Solicita tu cita</h2><p>Elige fecha y hora. FlowFix confirma antes de la visita.</p></div><div class="booking"><div class="form"><div class="success" id="success"></div>
 
 <div class="field"><label>1. Servicio / Service</label><select id="service"></select></div>
 
@@ -101,9 +143,9 @@ footer{background:var(--navy);color:#c7d6e7;padding:34px 0}.foot{display:grid;gr
 <div class="notice" id="productNotice" style="display:none">Los precios de producto mostrados ya incluyen el margen FlowFix y el IVA. Precio y disponibilidad se reconfirman antes de comprar.</div></div>
 
 <div class="field"><label>3. Zona / Area</label><select id="area"><option>Avilés</option><option>Castrillón</option></select></div>
-<div class="notice">La fecha y hora son una solicitud, no una reserva confirmada. FlowFix te responderá para CONFIRMARLA o PROPONER otra fecha/hora.</div>
+<div class="notice">La cita queda pendiente hasta que FlowFix la confirme. Si no podemos ese horario, te proponemos otro.</div>
 <div class="two"><div class="field"><label>4. Fecha preferida / Preferred date</label><input id="date" type="date"></div><div class="field"><label>Hora disponible / Available time</label><select id="time"><option value="">Elige una fecha primero</option></select></div></div>
-<div class="notice" id="hoursNotice">Horario: lunes–jueves 09:30–18:00 · viernes 09:30–16:00 · sábados y domingos cerrado. Los horarios confirmados desaparecen automáticamente.</div>
+<div class="notice" id="hoursNotice">Horario: lunes–viernes 09:30–18:00 · sábados y domingos cerrado. Los horarios confirmados desaparecen automáticamente.</div>
 
 <div class="two"><div class="field"><label>Nombre / Name</label><input id="name"></div><div class="field"><label>Teléfono / Phone</label><input id="phone"></div></div>
 <div class="two"><div class="field"><label>Email</label><input id="email" type="email"></div><div class="field"><label>Dirección / Address</label><input id="address"></div></div>
@@ -113,7 +155,7 @@ footer{background:var(--navy);color:#c7d6e7;padding:34px 0}.foot{display:grid;gr
 <strong>✓ Sin pago por adelantado / No upfront payment</strong><br>
 Reserva ahora y paga únicamente cuando el trabajo esté terminado y el importe final haya sido confirmado.
 </div>
-<div class="wa"><strong>📍 WhatsApp</strong><br><span style="font-size:12px;color:#53677d">Al enviar la solicitud, la cita queda PENDIENTE hasta que FlowFix la confirme. También podrás abrir WhatsApp para enviar ubicación exacta y fotos.</span></div>
+<div class="wa"><strong>📍 WhatsApp</strong><br><span style="font-size:12px;color:#53677d">Después de enviar, puedes mandarnos ubicación y fotos por WhatsApp.</span></div>
 <div class="consent"><input id="privacy" type="checkbox"><label for="privacy">He leído la <a href="privacidad.html" target="_blank" style="color:#0b6efd;text-decoration:underline">Política de Privacidad</a> y autorizo el uso de mis datos para gestionar esta solicitud.</label></div>
 <button class="cta" style="width:100%;margin-top:14px" onclick="confirmBooking()">Enviar solicitud de cita</button>
 </div>
@@ -124,33 +166,13 @@ Reserva ahora y paga únicamente cuando el trabajo esté terminado y el importe 
 
 
 
+
 <section class="section" id="reviews">
   <div class="container">
-    <div class="head">
-      <h2>Opiniones de clientes</h2>
-      <p>Solo publicamos reseñas reales de trabajos realizados por FlowFix.</p>
-    </div>
-    <div class="reviews">
-      <article class="review-card review-empty">
-        <div class="review-stars">★★★★★</div>
-        <p>Aquí aparecerán opiniones reales de clientes una vez que FlowFix empiece a recibir reseñas verificadas.</p>
-        <div class="review-meta">Reseña pendiente de cliente real</div>
-      </article>
-      <article class="review-card review-empty">
-        <div class="review-stars">★★★★★</div>
-        <p>Mostraremos comentarios sobre puntualidad, limpieza, trato y calidad del trabajo, sin inventar testimonios.</p>
-        <div class="review-meta">Espacio reservado para reseña verificada</div>
-      </article>
-      <article class="review-card review-empty">
-        <div class="review-stars">★★★★★</div>
-        <p>Cuando tengamos perfil de Google Business, podremos enlazar directamente las reseñas reales desde aquí.</p>
-        <div class="review-meta">Próximamente</div>
-      </article>
-    </div>
     <div class="review-cta">
       <div>
-        <strong>¿Ya hemos hecho un trabajo para ti?</strong>
-        <span style="color:var(--muted)">Pídenos el enlace para dejar tu opinión. Nos ayuda muchísimo a crecer en Avilés y Castrillón.</span>
+        <strong>Opiniones reales, no testimonios inventados</strong>
+        <span style="color:var(--muted)">Publicaremos reseñas verificadas de clientes a medida que FlowFix complete trabajos.</span>
       </div>
       <button class="outline" onclick="requestReview()">Dejar una opinión →</button>
     </div>
@@ -158,23 +180,17 @@ Reserva ahora y paga únicamente cuando el trabajo esté terminado y el importe 
 </section>
 
 <section class="section soft" id="payment-after">
-<div class="container">
-  <div class="head">
-    <h2>Paga únicamente cuando terminemos el trabajo</h2>
-    <p>Sin depósitos ni pagos por adelantado. Primero realizamos el trabajo y después confirmamos contigo el importe final.</p>
+  <div class="container">
+    <div class="assist" style="margin-top:0;background:#fff">
+      <div>
+        <strong>✓ Sin pago por adelantado</strong><br>
+        <span style="color:var(--muted)">Paga cuando terminemos: tarjeta mediante enlace seguro, Bizum o efectivo.</span>
+      </div>
+      <button class="outline" onclick="requestPaymentLink()">Pago de trabajo terminado →</button>
+    </div>
   </div>
-  <div class="steps">
-    <div class="step"><div class="num">1</div><h3>Trabajo terminado</h3><p>Revisas el trabajo y confirmamos el importe final.</p></div>
-    <div class="step"><div class="num">2</div><h3>Referencia FlowFix</h3><p>Usamos tu referencia FF-XXXXXX para identificar el trabajo.</p></div>
-    <div class="step"><div class="num">3</div><h3>Elige cómo pagar</h3><p>Tarjeta mediante enlace seguro, Bizum al 627 128 765 o efectivo.</p></div>
-  </div>
-  <div class="assist" style="margin-top:18px;background:#fff">
-    <div><strong>💳 ¿Necesitas tu enlace de pago?</strong><br><span style="color:var(--muted)">Solicítalo por WhatsApp indicando la referencia del trabajo terminado.</span></div>
-    <button class="outline" onclick="requestPaymentLink()">Solicitar enlace →</button>
-  </div>
-</div>
 </section>
-<footer><div class="container foot"><div><h4>FLOWFIX</h4><p>Pequeñas reparaciones e instalaciones de fontanería en Avilés y Castrillón.</p><p><strong>Titular:</strong> Paul David Adamson<br><strong>NIF:</strong> Y1582641W<br><strong>Domicilio:</strong> El Reguero 95, Bajo, Las Barzanas, 33456, Asturias, España</p></div><div><h4>Contacto</h4><p><a href="tel:+34627128765">+34 627 128 765</a><br><a href="https://wa.me/34627128765">WhatsApp</a><br>Bizum: 627 128 765<br>Tarjeta: enlace seguro después del trabajo<br><a href="mailto:info@flowfix.es">info@flowfix.es</a><br><a href="https://www.flowfix.es">www.flowfix.es</a></p></div><div><h4>Legal</h4><p><a href="aviso-legal.html">Aviso legal</a><br><a href="privacidad.html">Privacidad</a><br><a href="cookies.html">Cookies</a><br><a href="condiciones.html">Condiciones</a></p></div></div></footer>
+<footer><div class="container foot"><div><h4>FLOWFIX</h4><p>Fontanería para pequeños trabajos en Avilés y Castrillón.</p><p><strong>Titular:</strong> Paul David Adamson<br><strong>NIF:</strong> Y1582641W<br><strong>Domicilio:</strong> El Reguero 95, Bajo, Las Barzanas, 33456, Asturias, España</p></div><div><h4>Contacto</h4><p><a href="tel:+34627128765">+34 627 128 765</a><br><a href="https://wa.me/34627128765">WhatsApp</a><br>Bizum: 627 128 765<br>Tarjeta: enlace seguro después del trabajo<br><a href="mailto:info@flowfix.es">info@flowfix.es</a><br><a href="https://www.flowfix.es">www.flowfix.es</a></p></div><div><h4>Legal</h4><p><a href="aviso-legal.html">Aviso legal</a><br><a href="privacidad.html">Privacidad</a><br><a href="cookies.html">Cookies</a><br><a href="condiciones.html">Condiciones</a></p></div></div></footer>
 <div class="mobile"><button class="cta" onclick="goBook()">Reservar ahora</button></div>
 
 <script>
@@ -190,46 +206,46 @@ const SERVICES=[
 
 const PRODUCT_CATALOG={
 "0":[
-["budget","ROCA Mitos-N","ROCA","Opción básica de marca, cromo.","39.99","bath-mitos.webp","https://www.leroymerlin.es/productos/grifo-de-lavabo-roca-mitos-n-monomando-cromo-brillo-apertura-en-frio-antical-laton-98830101.html"],
-["good","ROCA Mitos","ROCA","Monomando cromado, opción sencilla y fiable.","39.76","bath-mitos.webp","https://www.leroymerlin.es/productos/grifo-de-lavabo-roca-mitos-monomando-cromo-brillo-antical-laton-16864344.html"],
-["better","ROCA Alpine","ROCA","Apertura en frío y acabado de gama media.","72.99","bath-alpine.webp","https://www.leroymerlin.es/productos/grifo-de-lavabo-roca-alpine-monomando-cromo-brillo-apertura-en-frio-antical-laton-91423751.html"],
-["premium","GROHE Start Clova","GROHE","Acabado GROHE y 5 años de garantía comercial.","79.99","bath-grohe.webp","https://www.leroymerlin.es/productos/grifo-de-lavabo-grohe-start-clova-monomando-cromo-brillo-antical-laton-82312202.html"]
+["budget","ROCA Mitos-N","ROCA","Opción básica de marca, cromo.","39.99","bath-mitos.webp","https://www.roca.es/productos/griferia"],
+["good","ROCA Mitos","ROCA","Monomando cromado, opción sencilla y fiable.","39.76","bath-mitos.webp","https://www.roca.es/productos/griferia"],
+["better","ROCA Alpine","ROCA","Apertura en frío y acabado de gama media.","72.99","bath-alpine.webp","https://www.roca.es/productos/griferia"],
+["premium","GROHE Start Clova","GROHE","Acabado GROHE y 5 años de garantía comercial.","79.99","bath-grohe.webp","https://www.grohe.es/es_es/"]
 ],
 "1":[
-["budget","ROCA Mitos caño alto","ROCA","Caño alto giratorio, limitador de caudal.","62.99","kitchen-mitos.webp","https://www.leroymerlin.es/productos/grifo-de-cocina-monomando-cano-alto-roca-mitos-cromado-2024-91426398.html"],
-["good","GROHE Start Clova","GROHE","Caño alto, acabado cromado y aireador.","95.00","kitchen-grohe.webp","https://www.leroymerlin.es/productos/grifo-de-cocina-monomando-cano-alto-grohe-start-clova-cromo-brillo-82472377.html"],
-["better","ROCA Nauta L","ROCA","Caño en L, apertura en frío y caudal limitado.","117.00","kitchen-nauta.webp","https://www.leroymerlin.es/productos/grifo-de-cocina-monomando-cano-alto-l-roca-nauta-cromado-90192685.html"],
-["premium","ROCA Nauta extraíble","ROCA","Opción premium con caño extraíble.","153.00","kitchen-nauta.webp","https://www.leroymerlin.es/productos/cocinas/grifos-de-cocina/todos-los-grifos-de-cocina/grifo-roca-cocina-p.html"]
+["budget","ROCA Mitos caño alto","ROCA","Caño alto giratorio, limitador de caudal.","62.99","kitchen-mitos.webp","https://www.roca.es/productos/griferia"],
+["good","GROHE Start Clova","GROHE","Caño alto, acabado cromado y aireador.","95.00","kitchen-grohe.webp","https://www.grohe.es/es_es/"],
+["better","ROCA Nauta L","ROCA","Caño en L, apertura en frío y caudal limitado.","117.00","kitchen-nauta.webp","https://www.roca.es/productos/griferia"],
+["premium","ROCA Nauta extraíble","ROCA","Opción premium con caño extraíble.","153.00","kitchen-nauta.webp","https://www.roca.es/productos/griferia"]
 ],
 "2":[
-["budget","ROCA Mitos-N ducha","ROCA","Monomando mural, incluye flexo y mango.","53.99","shower-mitos.webp","https://www.leroymerlin.es/productos/grifo-de-ducha-monomando-roca-mitos-n-cromo-brillo-antical-laton-98830103.html"],
-["good","ROCA Mitos ducha","ROCA","Monomando cromado clásico.","54.59","shower-mitos.webp","https://www.leroymerlin.es/productos/banos/griferia-de-bano/grifos-de-lavabo/grifo-roca-mitos-p.html"],
-["better","GROHE Start Clova ducha","GROHE","Monomando GROHE, regulación sencilla.","92.99","shower-grohe.webp","https://www.leroymerlin.es/productos/grifo-de-ducha-monomando-grohe-start-clova-cromo-brillo-antical-laton-82312207.html"],
-["premium","ROCA Mitos T termostático","ROCA","Termostático, Eco-Stop y seguridad a 38 °C.","139.00","shower-thermo.webp","https://www.leroymerlin.es/productos/grifo-de-ducha-termostatico-roca-mitos-t-cromo-brillo-antical-laton-83601422.html"]
+["budget","ROCA Mitos-N ducha","ROCA","Monomando mural, incluye flexo y mango.","53.99","shower-mitos.webp","https://www.roca.es/productos/griferia"],
+["good","ROCA Mitos ducha","ROCA","Monomando cromado clásico.","54.59","shower-mitos.webp","https://www.roca.es/productos/griferia"],
+["better","GROHE Start Clova ducha","GROHE","Monomando GROHE, regulación sencilla.","92.99","shower-grohe.webp","https://www.grohe.es/es_es/"],
+["premium","ROCA Mitos T termostático","ROCA","Termostático, Eco-Stop y seguridad a 38 °C.","139.00","shower-thermo.webp","https://www.roca.es/productos/griferia"]
 ]
 };
 const HEATER_CATALOG={
 "50":[
-["budget","ROINTE IRIS 50L","ROINTE","99.00","heater-rointe50.webp","https://www.leroymerlin.es/productos/termo-electrico-rointe-iris-50l-vertical-96906601.html"],
-["good","CORBERÓ 50L multiposición","CORBERÓ","129.00","heater-corbero.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-50-litros/"],
-["better","GILS Neptuno 50L","GILS","165.00","heater-gils.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-50-litros/"],
-["premium","Cointra TND Plus 50L","COINTRA","203.94","heater-corbero.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-50-litros/"]
+["budget","ROINTE IRIS 50L","ROINTE","99.00","heater-rointe50.webp","https://rointe.com/categoria-prod/termos-electricos/"],
+["good","CORBERÓ 50L multiposición","CORBERÓ","129.00","heater-corbero.webp","https://www.corbero.es/productos/confort/agua-caliente-sanitaria/termos/"],
+["better","GILS Neptuno 50L","GILS","165.00","heater-gils.webp",""],
+["premium","Cointra TND Plus 50L","COINTRA","203.94","heater-corbero.webp","https://www.cointra.es/termos-electricos/"]
 ],
 "80":[
-["budget","CORBERÓ 80L multiposición","CORBERÓ","149.00","heater-corbero.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-80-litros/"],
-["good","HAIER RM1 DUAL 75L","HAIER","139.00","heater-haier.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-80-litros/"],
-["better","HAIER DT DUAL+WIFI 74L","HAIER","219.00","heater-haier.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-80-litros/"],
-["premium","ARISTON VELIS PRO 80L","ARISTON","339.00","heater-velis.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-80-litros/"]
+["budget","CORBERÓ 80L multiposición","CORBERÓ","149.00","heater-corbero.webp","https://www.corbero.es/productos/confort/agua-caliente-sanitaria/termos/"],
+["good","HAIER RM1 DUAL 75L","HAIER","139.00","heater-haier.webp","https://www.haier-europe.com/es_ES/"],
+["better","HAIER DT DUAL+WIFI 74L","HAIER","219.00","heater-haier.webp","https://www.haier-europe.com/es_ES/"],
+["premium","ARISTON VELIS PRO 80L","ARISTON","339.00","heater-velis.webp","https://www.ariston.com/es-es/productos/termos-y-calentadores"]
 ],
 "100":[
 ["budget","SKY-TV-100 VOLECO","VOLECO","138.00","heater-equation.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-100-litros/"],
-["good","ARISTON BLU1 B 100L","ARISTON","169.00","heater-ariston.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-100-litros/"],
+["good","ARISTON BLU1 B 100L","ARISTON","169.00","heater-ariston.webp","https://www.ariston.com/es-es/productos/termos-y-calentadores"],
 ["better","EQUATION EQ2 100L","EQUATION","209.00","heater-equation.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-100-litros/"],
 ["premium","BOSCH Tronic TR4001 100L","BOSCH","289.00","heater-bosch.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-100-litros/"]
 ],
 "150":[
-["budget","TESY Bilight 150L","TESY","189.00","heater-gils.webp","https://www.leroymerlin.es/productos/termo-electrico-tesy-bilight-150l-vertical-91698814.html"],
-["good","TESY Bilight 150L","TESY","189.00","heater-gils.webp","https://www.leroymerlin.es/productos/termo-electrico-tesy-bilight-150l-vertical-91698814.html"],
+["budget","TESY Bilight 150L","TESY","189.00","heater-gils.webp","https://tesy.es/productos/termos-electricos"],
+["good","TESY Bilight 150L","TESY","189.00","heater-gils.webp","https://tesy.es/productos/termos-electricos"],
 ["better","BOSCH Tronic TR2102 150L","BOSCH","399.00","heater-bosch.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-150-litros/"],
 ["premium","BOSCH Tronic TR2102 150L","BOSCH","399.00","heater-bosch.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-150-litros/"]
 ]
@@ -272,7 +288,7 @@ function renderProducts(){
        ${desc?`<div class="retail">${desc}</div>`:''}
        <div class="pprice">€${price.toFixed(2)}</div>
        <div class="retail">Precio FlowFix · IVA incluido</div>
-       <a class="source-link" href="${link}" target="_blank" onclick="event.stopPropagation()">Ver producto en Leroy Merlin ↗</a>
+       ${link ? `<a class="source-link" href="${link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Ver producto ↗</a>` : ``}
      </div>
    </div>`;
  });
@@ -358,9 +374,9 @@ function setLang(l){
  lang=l;
  document.documentElement.lang=l;
  if(document.getElementById('langES')) document.getElementById('langES').classList.toggle('active-lang',l==='es');
- if(document.getElementById('langEN')) document.getElementById('langEN').classList.toggle('active-lang',l==='en');heroTitle.innerHTML=l==='es'?'¿Un trabajo pequeño de fontanería? <em>Lo hacemos.</em>':'Small plumbing job? <em>We’ll do it.</em>';
- heroText.textContent=l==='es'?'FlowFix se especializa en trabajos domésticos que a menudo son difíciles de reservar: grifos de baño y cocina, duchas, reparaciones de cisternas, termos eléctricos y pequeñas reparaciones.':'FlowFix specialises in everyday plumbing jobs that can be hard to book: bathroom and kitchen taps, showers, toilet cistern repairs, electric water heaters and small repairs.';
- servicesTitle.textContent=l==='es'?'¿Qué necesitas?':'What do you need?';servicesSub.textContent=l==='es'?'Elige el trabajo que mejor se adapte a tu situación.':'Choose the job that best matches what you need.';
+ if(document.getElementById('langEN')) document.getElementById('langEN').classList.toggle('active-lang',l==='en');heroTitle.innerHTML=l==='es'?'Fontanería fácil. <em>Reserva en minutos.</em>':'Small plumbing job? <em>We’ll do it.</em>';
+ heroText.textContent=l==='es'?'Pequeñas reparaciones e instalaciones en Avilés y Castrillón. Elige el trabajo, solicita día y hora y espera nuestra confirmación.':'FlowFix specialises in everyday plumbing jobs that can be hard to book: bathroom and kitchen taps, showers, toilet cistern repairs, electric water heaters and small repairs.';
+ servicesTitle.textContent=l==='es'?'Elige tu servicio':'What do you need?';servicesSub.textContent=l==='es'?'Precios claros, sin pago por adelantado.':'Choose the job that best matches what you need.';
  SERVICES.forEach((s,i)=>{document.getElementById('svcName'+i).textContent=l==='es'?s.es:s.en;document.getElementById('svcDesc'+i).textContent=l==='es'?s.descEs:s.descEn;service.options[i].textContent=l==='es'?s.es:s.en});
  refreshSummary();
 }

@@ -1,0 +1,21 @@
+FLOWFIX STREAMLINED VERSION
+
+Kept:
+- Spanish-first website
+- Live booking/calendar functions
+- Monday–Friday 09:30–18:00, weekends closed
+- Owner confirmation workflow
+- Supplied-product choices
+- WhatsApp
+- No upfront payment
+- Reviews framework
+- SEO/legal pages
+- Netlify Forms / Functions
+
+Simplified:
+- Shorter hero
+- Booking positioned as the main action
+- Removed repeated "how it works" section
+- Service cards show only essential information
+- Compact reviews/payment/local-service sections
+- Tighter mobile spacing and typography

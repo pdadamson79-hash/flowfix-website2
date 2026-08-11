@@ -1,0 +1,9 @@
+FLOWFIX PUBLISH VERSION
+- Streamlined Spanish-first site
+- WhatsApp remains the main contact method
+- Small secondary header contact: 627 128 765
+- Product buttons now say "Ver producto"
+- Retailer links replaced with verified official brand/category websites where available
+- GILS retailer link removed because no verified manufacturer product website was found
+- Booking hours: Monday-Friday 09:30-18:00; weekends closed
+- Netlify functions remain in netlify/functions
