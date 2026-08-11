@@ -1,0 +1,18 @@
+PLANTILLA DE CONFIRMACIÓN WHATSAPP — FLOWFIX
+
+Reserva confirmada ✅
+Referencia: [FF-XXXXXX]
+Servicio: [SERVICIO]
+Fecha: [FECHA]
+Hora: [HORA]
+Dirección / ubicación: [DIRECCIÓN]
+Precio acordado: [PRECIO]
+Pago: [ONLINE / BIZUM / EFECTIVO]
+Bizum (si aplica): 627 128 765
+Concepto recomendado: [REFERENCIA]
+
+Si necesitas enviarnos una foto o actualizar la ubicación, responde a este chat.
+
+FlowFix
+Avilés · Castrillón
++34 627 128 765

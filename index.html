@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FlowFix | Fontanería fácil en Avilés y Castrillón</title>
+<meta name="description" content="Pequeñas reparaciones e instalaciones de fontanería en Avilés y Castrillón. Grifos de baño y cocina, duchas, inodoros, termos eléctricos y más. Reserva por WhatsApp.">
+<link rel="canonical" href="https://www.flowfix.es/">
+<meta name="theme-color" content="#071d38">
+<style>
+:root{--navy:#071d38;--blue:#0b6efd;--soft:#f5f8fc;--line:#dfe7f0;--text:#10243e;--muted:#68798b;--green:#25D366}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--text);background:#fff}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}.container{max-width:1180px;margin:auto;padding:0 22px}
+header{position:sticky;top:0;z-index:50;background:rgba(7,29,56,.97);color:#fff}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:28px;font-weight:900}.brand span{color:#39a3ff}.nav-actions{display:flex;gap:7px;align-items:center}.lang{background:transparent;color:#fff;border:0;padding:8px 9px;font-weight:800}.cta,.outline{border-radius:11px;padding:12px 16px;font-weight:800;cursor:pointer}.cta{background:var(--blue);color:#fff;border:0}.outline{background:#fff;color:var(--blue);border:1px solid var(--blue)}
+.hero{padding:58px 0;background:linear-gradient(135deg,#fff,#eef6ff)}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:#fff;font-size:13px;font-weight:800}.hero h1{font-size:56px;line-height:1.03;max-width:800px;margin:16px 0}.hero h1 em{font-style:normal;color:var(--blue)}.hero p{font-size:18px;line-height:1.6;max-width:720px;color:#51647b}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.section{padding:44px 0}.soft{background:#fbfdff}.head{text-align:center;margin-bottom:24px}.head h2{font-size:33px;margin:0 0 7px}.head p{margin:0;color:var(--muted)}.services{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.service{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;cursor:pointer;transition:.18s}.service:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(10,48,88,.08)}.service img{display:block;width:100%;aspect-ratio:1.2;object-fit:cover}.service-body{padding:14px}.service h3{font-size:16px;margin:0 0 6px}.service p{font-size:12px;line-height:1.45;color:var(--muted);min-height:52px;margin:0}.from{font-size:12px;color:var(--muted);margin-top:10px}.price{font-size:24px;font-weight:900}.vat{font-size:11px;color:var(--muted);font-weight:700}
+.assist{margin-top:16px;border:1px solid #cfe0fb;background:#f1f7ff;border-radius:14px;padding:17px 20px;display:flex;justify-content:space-between;gap:15px;align-items:center}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{border:1px solid var(--line);border-radius:15px;padding:19px}.num{width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:900}.banner{margin-top:22px;background:linear-gradient(135deg,#071d38,#0c315b);color:#fff;border-radius:18px;padding:24px;display:grid;grid-template-columns:1.3fr .7fr;gap:20px}.area{background:#fff;color:var(--navy);border-radius:13px;padding:18px;font-weight:800}
+.bookwrap{background:var(--soft);padding:50px 0}.booking{display:grid;grid-template-columns:1.2fr .8fr;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 16px 42px rgba(7,29,56,.08)}.form{padding:24px}.summary{background:var(--navy);color:#fff;padding:26px}.field{margin-bottom:14px}.field label{display:block;font-size:13px;font-weight:800;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff}.field textarea{min-height:90px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.choice{border:1px solid var(--line);border-radius:11px;padding:12px;cursor:pointer;background:#fff}.choice.active{border:2px solid var(--blue);background:#eff6ff}.choice small{color:var(--muted)}.tiers{display:none;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}.tier{border:1px solid var(--line);border-radius:11px;padding:11px;cursor:pointer}.tier.active{border:2px solid var(--blue);background:#f4f8ff}.tier strong{display:block}.recommended{font-size:10px;color:var(--blue);font-weight:900}
+.notice{font-size:12px;background:#fff8df;border:1px solid #efd679;border-radius:9px;padding:10px;margin-top:10px}.wa{background:#f0fbf5;border:1px solid #bfe8cf;border-radius:12px;padding:13px;margin:12px 0}.consent{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:#53677d}.consent input{width:auto;margin-top:2px}.success{display:none;background:#e9f8f1;border:1px solid #b9e4d0;color:#145c41;border-radius:10px;padding:13px;margin-bottom:14px}.row{display:flex;justify-content:space-between;margin:13px 0;color:#d7e7f7}.total{border-top:1px solid #34506d;padding-top:15px;font-size:22px;font-weight:900}.small{font-size:12px;color:#a9bdd3;line-height:1.5}
+footer{background:var(--navy);color:#c7d6e7;padding:34px 0}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:22px}.foot h4{color:#fff;margin-top:0}.foot a{text-decoration:underline;text-underline-offset:2px}.mobile{display:none;position:fixed;bottom:14px;left:14px;right:14px;z-index:60}.mobile button{width:100%}
+@media(max-width:1000px){.services{grid-template-columns:repeat(3,1fr)}.booking{grid-template-columns:1fr}.summary{order:-1}}@media(max-width:650px){body{padding-bottom:76px}.hero h1{font-size:40px}.services{grid-template-columns:repeat(2,1fr)}.steps,.two,.choices,.tiers,.banner,.foot{grid-template-columns:1fr}.assist{align-items:flex-start;flex-direction:column}.mobile{display:block}.desktop{display:none}.service p{min-height:0}}
+
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+.product-card{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fff;cursor:pointer}
+.product-card.active{border:2px solid var(--blue);background:#f4f8ff}
+.product-card .level{font-size:10px;font-weight:900;color:var(--blue)}
+.product-card .model{font-weight:900;font-size:13px;margin:5px 0}
+.product-card .brandx{font-size:10px;color:var(--muted)}
+.product-card .pprice{font-size:18px;font-weight:900;margin-top:7px}
+.product-card .retail{font-size:10px;color:var(--muted)}
+@media(max-width:650px){.product-grid{grid-template-columns:1fr 1fr}}
+
+.product-card{padding:0!important;overflow:hidden;position:relative;display:flex;flex-direction:column;min-height:310px}
+.product-card .product-photo{width:100%;aspect-ratio:1.35;object-fit:contain;background:#fff;padding:12px;border-bottom:1px solid var(--line)}
+.product-card .pcopy{padding:12px;display:flex;flex-direction:column;flex:1}
+.product-card .model{font-size:14px!important;line-height:1.3;min-height:36px}
+.product-card .pprice{font-size:21px!important;color:var(--navy)}
+.product-card .source-link{display:inline-block;margin-top:auto;padding-top:8px;color:var(--blue);font-size:11px;font-weight:800}
+.product-card.active:after{content:"✓";position:absolute;right:9px;top:9px;width:27px;height:27px;border-radius:50%;background:var(--blue);color:white;display:grid;place-items:center;font-weight:900}
+.product-card[data-level="better"]:before{content:"RECOMENDADO";position:absolute;left:8px;top:8px;background:#0b6efd;color:white;border-radius:999px;padding:5px 8px;font-size:9px;font-weight:900;z-index:2}
+@media(max-width:650px){.product-grid{grid-template-columns:1fr 1fr!important}.product-card{min-height:280px}.product-card .model{min-height:0}}
+@media(max-width:430px){.product-grid{grid-template-columns:1fr!important}.product-card{min-height:0}.product-card .product-photo{aspect-ratio:1.7}}
+
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:34px;align-items:center}
+.hero-copy{min-width:0}
+.hero-photo{border-radius:22px;overflow:hidden;box-shadow:0 18px 45px rgba(7,29,56,.16);background:#eaf1f7}
+.hero-photo img{display:block;width:100%;height:100%;min-height:360px;object-fit:cover}
+.service img{aspect-ratio:1.18!important;object-fit:cover!important;background:#eef4f8}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-photo{order:-1}.hero-photo img{min-height:270px;max-height:360px}.hero{padding-top:26px}}
+@media(max-width:650px){.hero-photo img{min-height:220px}.hero h1{margin-top:14px}}
+.lang.active-lang{background:#fff;color:var(--navy);border-radius:8px}
+
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.review-card{border:1px solid var(--line);border-radius:16px;padding:20px;background:#fff}
+.review-stars{letter-spacing:2px;color:#f5a623;font-size:18px;margin-bottom:10px}
+.review-card p{color:#53677d;line-height:1.6;margin:0 0 14px}
+.review-meta{font-size:12px;color:var(--muted);font-weight:700}
+.review-empty{border:1px dashed #b9cbe0;background:#f8fbff}
+.review-cta{margin-top:18px;padding:18px 20px;border-radius:14px;background:linear-gradient(90deg,#f1f7ff,#fff);border:1px solid #cfe0fb;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.review-cta strong{display:block;margin-bottom:4px}
+@media(max-width:800px){.reviews{grid-template-columns:1fr}.review-cta{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+
+<form name="booking-request" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input name="form-name" value="booking-request">
+  <input name="bot-field">
+  <input name="reference">
+  <input name="status">
+  <input name="service">
+  <input name="area">
+  <input name="preferred_date">
+  <input name="preferred_time">
+  <input name="product">
+  <input name="removal">
+  <input name="name">
+  <input name="phone">
+  <input name="email">
+  <input name="address">
+  <textarea name="details"></textarea>
+</form>
+
+<header><div class="container nav"><div class="brand">FLOW<span>FIX</span></div><div class="nav-actions"><button class="lang active-lang" id="langES" onclick="setLang('es')">ES</button><button class="lang" id="langEN" onclick="setLang('en')">EN</button><button class="cta desktop" onclick="goBook()">Reservar ahora</button></div></div></header>
+
+<section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="pill">📍 Avilés · Castrillón</span><h1 id="heroTitle">¿Un trabajo pequeño de fontanería? <em>Lo hacemos.</em></h1><p id="heroText">FlowFix se especializa en trabajos domésticos que a menudo son difíciles de reservar: grifos de baño y cocina, duchas, reparaciones de cisternas, termos eléctricos y pequeñas reparaciones.</p><div class="notice" style="display:inline-block;margin-top:12px;background:#edf8f1;border-color:#b9e4d0;color:#145c41"><strong>✓ Sin pago por adelantado</strong> — paga cuando el trabajo esté terminado.</div><div class="hero-actions"><button class="cta" onclick="goBook()">Reservar ahora</button><button class="outline" onclick="document.getElementById('services').scrollIntoView()">Ver servicios</button></div></div><div class="hero-photo"><img src="hero-plumber.jpg" alt="FlowFix plumber carrying out a small plumbing repair"></div></div></section>
+
+<section class="section soft" id="services"><div class="container"><div class="head"><h2 id="servicesTitle">¿Qué necesitas?</h2><p id="servicesSub">Elige el trabajo que mejor se adapte a tu situación.</p></div><div class="services" id="cards"></div><div class="assist"><div><strong>¿No tienes claro qué reparación necesitas?</strong><br><span style="color:var(--muted)">Envíanos una foto por WhatsApp y te orientamos.</span></div><button class="outline" onclick="chooseService(5)">Enviar foto por WhatsApp →</button></div></div></section>
+
+<section class="section"><div class="container"><div class="head"><h2>Cómo funciona</h2></div><div class="steps"><div class="step"><div class="num">1</div><h3>Elige tu servicio</h3><p>Selecciona el trabajo que necesitas.</p></div><div class="step"><div class="num">2</div><h3>Producto y cita</h3><p>Usa el tuyo o deja que FlowFix lo suministre.</p></div><div class="step"><div class="num">3</div><h3>WhatsApp y confirmación</h3><p>Envías ubicación/fotos y FlowFix confirma la cita.</p></div></div><div class="banner"><div><h3>El fontanero que sí viene para los trabajos pequeños.</h3><p>Precios claros · Sin sorpresas · Sin emergencias ni fuera de horario</p></div><div class="area">📍 Solo Avilés y Castrillón</div></div></div></section>
+
+<section class="bookwrap" id="book"><div class="container"><div class="head"><h2 id="bookTitle">Reserva tu servicio</h2><p>Reserva en unos minutos. Sin pago por adelantado.</p></div><div class="booking"><div class="form"><div class="success" id="success"></div>
+
+<div class="field"><label>1. Servicio / Service</label><select id="service"></select></div>
+
+<div class="field" id="heaterWrap" style="display:none"><label>Tamaño del termo / Water heater size</label><select id="heater"><option value="50">50 L — instalación €151.25 IVA incl.</option><option value="80">80 L — instalación €175.45 IVA incl.</option><option value="100">100 L — instalación €199.65 IVA incl.</option><option value="150">150 L — instalación €235.95 IVA incl.</option></select></div>
+
+<div class="field" id="removalWrap" style="display:none"><label id="removalLabel">Retirada opcional / Optional removal</label><div class="choices"><div class="choice active" id="noRemoval" onclick="setRemoval(false)"><strong>No</strong><br><small>Sin retirada</small></div><div class="choice" id="yesRemoval" onclick="setRemoval(true)"><strong>+ €20.00</strong><br><small>IVA incluido</small></div></div></div>
+
+<div class="field" id="productField"><label>2. Producto / Product</label><div class="choices"><div class="choice active" id="own" onclick="setProduct('own')"><strong>Tengo el mío</strong><br><small>I have my own</small></div><div class="choice" id="supply" onclick="setProduct('supply')"><strong>FlowFix lo suministra</strong><br><small>FlowFix supplies it</small></div></div>
+<div class="product-grid" id="productGrid" style="display:none"></div>
+<div class="notice" id="productNotice" style="display:none">Los precios de producto mostrados ya incluyen el margen FlowFix y el IVA. Precio y disponibilidad se reconfirman antes de comprar.</div></div>
+
+<div class="field"><label>3. Zona / Area</label><select id="area"><option>Avilés</option><option>Castrillón</option></select></div>
+<div class="notice">La fecha y hora son una solicitud, no una reserva confirmada. FlowFix te responderá para CONFIRMARLA o PROPONER otra fecha/hora.</div>
+<div class="two"><div class="field"><label>4. Fecha preferida / Preferred date</label><input id="date" type="date"></div><div class="field"><label>Hora disponible / Available time</label><select id="time"><option value="">Elige una fecha primero</option></select></div></div>
+<div class="notice" id="hoursNotice">Horario: lunes–jueves 09:30–18:00 · viernes 09:30–16:00 · sábados y domingos cerrado. Los horarios confirmados desaparecen automáticamente.</div>
+
+<div class="two"><div class="field"><label>Nombre / Name</label><input id="name"></div><div class="field"><label>Teléfono / Phone</label><input id="phone"></div></div>
+<div class="two"><div class="field"><label>Email</label><input id="email" type="email"></div><div class="field"><label>Dirección / Address</label><input id="address"></div></div>
+<div class="field"><label>Describe el trabajo / Job details</label><textarea id="notes" placeholder="Ej.: el grifo de cocina gotea y quiero sustituirlo..."></textarea></div>
+
+<div class="notice" style="background:#edf8f1;border-color:#b9e4d0;color:#145c41">
+<strong>✓ Sin pago por adelantado / No upfront payment</strong><br>
+Reserva ahora y paga únicamente cuando el trabajo esté terminado y el importe final haya sido confirmado.
+</div>
+<div class="wa"><strong>📍 WhatsApp</strong><br><span style="font-size:12px;color:#53677d">Al enviar la solicitud, la cita queda PENDIENTE hasta que FlowFix la confirme. También podrás abrir WhatsApp para enviar ubicación exacta y fotos.</span></div>
+<div class="consent"><input id="privacy" type="checkbox"><label for="privacy">He leído la <a href="privacidad.html" target="_blank" style="color:#0b6efd;text-decoration:underline">Política de Privacidad</a> y autorizo el uso de mis datos para gestionar esta solicitud.</label></div>
+<button class="cta" style="width:100%;margin-top:14px" onclick="confirmBooking()">Enviar solicitud de cita</button>
+</div>
+
+<aside class="summary"><h3>Resumen / Summary</h3><div class="row"><span>Servicio</span><strong id="sumService">—</strong></div><div class="row"><span>Zona</span><strong id="sumArea">Avilés</strong></div><div class="row"><span>Instalación</span><strong id="sumPrice">€0</strong></div><div class="row" id="sumRemovalRow" style="display:none"><span>Retirada opcional</span><strong>€20.00</strong></div><div class="row"><span>Producto</span><strong id="sumProduct">Propio</strong></div><div class="row"><span>Pago</span><strong>Después del trabajo</strong></div><div class="row total"><span>Total instalación</span><span id="sumTotal">€0</span></div><p class="small">Todos los precios de instalación mostrados incluyen 21% IVA. Los productos suministrados por FlowFix se añaden aparte con precio final IVA incluido confirmado antes de comprar.</p></aside>
+
+</div></div></div></section>
+
+
+
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="head">
+      <h2>Opiniones de clientes</h2>
+      <p>Solo publicamos reseñas reales de trabajos realizados por FlowFix.</p>
+    </div>
+    <div class="reviews">
+      <article class="review-card review-empty">
+        <div class="review-stars">★★★★★</div>
+        <p>Aquí aparecerán opiniones reales de clientes una vez que FlowFix empiece a recibir reseñas verificadas.</p>
+        <div class="review-meta">Reseña pendiente de cliente real</div>
+      </article>
+      <article class="review-card review-empty">
+        <div class="review-stars">★★★★★</div>
+        <p>Mostraremos comentarios sobre puntualidad, limpieza, trato y calidad del trabajo, sin inventar testimonios.</p>
+        <div class="review-meta">Espacio reservado para reseña verificada</div>
+      </article>
+      <article class="review-card review-empty">
+        <div class="review-stars">★★★★★</div>
+        <p>Cuando tengamos perfil de Google Business, podremos enlazar directamente las reseñas reales desde aquí.</p>
+        <div class="review-meta">Próximamente</div>
+      </article>
+    </div>
+    <div class="review-cta">
+      <div>
+        <strong>¿Ya hemos hecho un trabajo para ti?</strong>
+        <span style="color:var(--muted)">Pídenos el enlace para dejar tu opinión. Nos ayuda muchísimo a crecer en Avilés y Castrillón.</span>
+      </div>
+      <button class="outline" onclick="requestReview()">Dejar una opinión →</button>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="payment-after">
+<div class="container">
+  <div class="head">
+    <h2>Paga únicamente cuando terminemos el trabajo</h2>
+    <p>Sin depósitos ni pagos por adelantado. Primero realizamos el trabajo y después confirmamos contigo el importe final.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>Trabajo terminado</h3><p>Revisas el trabajo y confirmamos el importe final.</p></div>
+    <div class="step"><div class="num">2</div><h3>Referencia FlowFix</h3><p>Usamos tu referencia FF-XXXXXX para identificar el trabajo.</p></div>
+    <div class="step"><div class="num">3</div><h3>Elige cómo pagar</h3><p>Tarjeta mediante enlace seguro, Bizum al 627 128 765 o efectivo.</p></div>
+  </div>
+  <div class="assist" style="margin-top:18px;background:#fff">
+    <div><strong>💳 ¿Necesitas tu enlace de pago?</strong><br><span style="color:var(--muted)">Solicítalo por WhatsApp indicando la referencia del trabajo terminado.</span></div>
+    <button class="outline" onclick="requestPaymentLink()">Solicitar enlace →</button>
+  </div>
+</div>
+</section>
+<footer><div class="container foot"><div><h4>FLOWFIX</h4><p>Pequeñas reparaciones e instalaciones de fontanería en Avilés y Castrillón.</p><p><strong>Titular:</strong> Paul David Adamson<br><strong>NIF:</strong> Y1582641W<br><strong>Domicilio:</strong> El Reguero 95, Bajo, Las Barzanas, 33456, Asturias, España</p></div><div><h4>Contacto</h4><p><a href="tel:+34627128765">+34 627 128 765</a><br><a href="https://wa.me/34627128765">WhatsApp</a><br>Bizum: 627 128 765<br>Tarjeta: enlace seguro después del trabajo<br><a href="mailto:info@flowfix.es">info@flowfix.es</a><br><a href="https://www.flowfix.es">www.flowfix.es</a></p></div><div><h4>Legal</h4><p><a href="aviso-legal.html">Aviso legal</a><br><a href="privacidad.html">Privacidad</a><br><a href="cookies.html">Cookies</a><br><a href="condiciones.html">Condiciones</a></p></div></div></footer>
+<div class="mobile"><button class="cta" onclick="goBook()">Reservar ahora</button></div>
+
+<script>
+const FLOWFIX_WHATSAPP='34627128765';
+const SERVICES=[
+ {img:'bathroom-tap-photo.jpg',es:'Grifo de baño',en:'Bathroom tap',descEs:'Sustitución estándar de grifo de lavabo.',descEn:'Standard bathroom tap replacement.',base:65,product:true,removal:false},
+ {img:'kitchen-tap-photo.jpg',es:'Grifo de cocina',en:'Kitchen tap',descEs:'Sustitución estándar de grifo de fregadero.',descEn:'Standard kitchen tap replacement.',base:65,product:true,removal:false},
+ {img:'shower-photo.jpg',es:'Ducha',en:'Shower',descEs:'Sustitución de grifería de ducha expuesta.',descEn:'Exposed shower mixer replacement.',base:85,product:true,removal:false},
+ {img:'cistern-photo.jpg',es:'Reparación de cisterna',en:'Toilet cistern repair',descEs:'Cisternas que gotean, no llenan o no descargan correctamente.',descEn:'Cisterns that run, fail to fill or do not flush correctly.',base:75,product:false,removal:false},
+ {img:'heater-photo.jpg',es:'Termo eléctrico',en:'Electric water heater',descEs:'Instalación o sustitución hasta 150 L.',descEn:'Installation or replacement up to 150 L.',base:125,product:true,removal:true,heater:true},
+ {img:'repair-photo.jpg',es:'Pequeñas reparaciones',en:'Small repairs',descEs:'Fugas, llaves de paso, conexiones, cisternas y más.',descEn:'Leaks, valves, connections, cisterns and more.',base:75,product:false,removal:false}
+];
+
+const PRODUCT_CATALOG={
+"0":[
+["budget","ROCA Mitos-N","ROCA","Opción básica de marca, cromo.","39.99","bath-mitos.webp","https://www.leroymerlin.es/productos/grifo-de-lavabo-roca-mitos-n-monomando-cromo-brillo-apertura-en-frio-antical-laton-98830101.html"],
+["good","ROCA Mitos","ROCA","Monomando cromado, opción sencilla y fiable.","39.76","bath-mitos.webp","https://www.leroymerlin.es/productos/grifo-de-lavabo-roca-mitos-monomando-cromo-brillo-antical-laton-16864344.html"],
+["better","ROCA Alpine","ROCA","Apertura en frío y acabado de gama media.","72.99","bath-alpine.webp","https://www.leroymerlin.es/productos/grifo-de-lavabo-roca-alpine-monomando-cromo-brillo-apertura-en-frio-antical-laton-91423751.html"],
+["premium","GROHE Start Clova","GROHE","Acabado GROHE y 5 años de garantía comercial.","79.99","bath-grohe.webp","https://www.leroymerlin.es/productos/grifo-de-lavabo-grohe-start-clova-monomando-cromo-brillo-antical-laton-82312202.html"]
+],
+"1":[
+["budget","ROCA Mitos caño alto","ROCA","Caño alto giratorio, limitador de caudal.","62.99","kitchen-mitos.webp","https://www.leroymerlin.es/productos/grifo-de-cocina-monomando-cano-alto-roca-mitos-cromado-2024-91426398.html"],
+["good","GROHE Start Clova","GROHE","Caño alto, acabado cromado y aireador.","95.00","kitchen-grohe.webp","https://www.leroymerlin.es/productos/grifo-de-cocina-monomando-cano-alto-grohe-start-clova-cromo-brillo-82472377.html"],
+["better","ROCA Nauta L","ROCA","Caño en L, apertura en frío y caudal limitado.","117.00","kitchen-nauta.webp","https://www.leroymerlin.es/productos/grifo-de-cocina-monomando-cano-alto-l-roca-nauta-cromado-90192685.html"],
+["premium","ROCA Nauta extraíble","ROCA","Opción premium con caño extraíble.","153.00","kitchen-nauta.webp","https://www.leroymerlin.es/productos/cocinas/grifos-de-cocina/todos-los-grifos-de-cocina/grifo-roca-cocina-p.html"]
+],
+"2":[
+["budget","ROCA Mitos-N ducha","ROCA","Monomando mural, incluye flexo y mango.","53.99","shower-mitos.webp","https://www.leroymerlin.es/productos/grifo-de-ducha-monomando-roca-mitos-n-cromo-brillo-antical-laton-98830103.html"],
+["good","ROCA Mitos ducha","ROCA","Monomando cromado clásico.","54.59","shower-mitos.webp","https://www.leroymerlin.es/productos/banos/griferia-de-bano/grifos-de-lavabo/grifo-roca-mitos-p.html"],
+["better","GROHE Start Clova ducha","GROHE","Monomando GROHE, regulación sencilla.","92.99","shower-grohe.webp","https://www.leroymerlin.es/productos/grifo-de-ducha-monomando-grohe-start-clova-cromo-brillo-antical-laton-82312207.html"],
+["premium","ROCA Mitos T termostático","ROCA","Termostático, Eco-Stop y seguridad a 38 °C.","139.00","shower-thermo.webp","https://www.leroymerlin.es/productos/grifo-de-ducha-termostatico-roca-mitos-t-cromo-brillo-antical-laton-83601422.html"]
+]
+};
+const HEATER_CATALOG={
+"50":[
+["budget","ROINTE IRIS 50L","ROINTE","99.00","heater-rointe50.webp","https://www.leroymerlin.es/productos/termo-electrico-rointe-iris-50l-vertical-96906601.html"],
+["good","CORBERÓ 50L multiposición","CORBERÓ","129.00","heater-corbero.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-50-litros/"],
+["better","GILS Neptuno 50L","GILS","165.00","heater-gils.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-50-litros/"],
+["premium","Cointra TND Plus 50L","COINTRA","203.94","heater-corbero.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-50-litros/"]
+],
+"80":[
+["budget","CORBERÓ 80L multiposición","CORBERÓ","149.00","heater-corbero.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-80-litros/"],
+["good","HAIER RM1 DUAL 75L","HAIER","139.00","heater-haier.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-80-litros/"],
+["better","HAIER DT DUAL+WIFI 74L","HAIER","219.00","heater-haier.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-80-litros/"],
+["premium","ARISTON VELIS PRO 80L","ARISTON","339.00","heater-velis.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-80-litros/"]
+],
+"100":[
+["budget","SKY-TV-100 VOLECO","VOLECO","138.00","heater-equation.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-100-litros/"],
+["good","ARISTON BLU1 B 100L","ARISTON","169.00","heater-ariston.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-100-litros/"],
+["better","EQUATION EQ2 100L","EQUATION","209.00","heater-equation.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-100-litros/"],
+["premium","BOSCH Tronic TR4001 100L","BOSCH","289.00","heater-bosch.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-100-litros/"]
+],
+"150":[
+["budget","TESY Bilight 150L","TESY","189.00","heater-gils.webp","https://www.leroymerlin.es/productos/termo-electrico-tesy-bilight-150l-vertical-91698814.html"],
+["good","TESY Bilight 150L","TESY","189.00","heater-gils.webp","https://www.leroymerlin.es/productos/termo-electrico-tesy-bilight-150l-vertical-91698814.html"],
+["better","BOSCH Tronic TR2102 150L","BOSCH","399.00","heater-bosch.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-150-litros/"],
+["premium","BOSCH Tronic TR2102 150L","BOSCH","399.00","heater-bosch.webp","https://www.leroymerlin.es/productos/calefaccion-y-climatizacion/agua-caliente-sanitaria/termos-electricos/termos-electricos-150-litros/"]
+]
+};
+const HEATER_LABOR={'50':125,'80':145,'100':165,'150':195};
+
+const SERVICE_DURATION_MIN={0:60,1:60,2:90,3:60,4:120,5:60};
+let lang='es',idx=0,pm='own',tier='better',removal=false,ref=null;
+
+const cards=document.getElementById('cards'),service=document.getElementById('service');
+SERVICES.forEach((s,i)=>{
+ cards.innerHTML+=`<article class="service" onclick="chooseService(${i})"><img src="${s.img}" alt=""><div class="service-body"><h3 id="svcName${i}">${s.es}</h3><p id="svcDesc${i}">${s.descEs}</p><div class="from">Desde</div><div class="price">€${(s.base*1.21).toFixed(2)}${i===5?'+':''}</div><div class="vat">IVA incluido</div></div></article>`;
+ service.innerHTML+=`<option value="${i}">${s.es}</option>`;
+});
+date.min=new Date().toISOString().slice(0,10);
+date.addEventListener('change',loadAvailability);
+service.addEventListener('change',loadAvailability);
+service.onchange=()=>{idx=+service.value;refresh()};
+heater.onchange=()=>{if(pm==='supply')renderProducts();refreshSummary()};area.onchange=refreshSummary;
+
+function goBook(){book.scrollIntoView({behavior:'smooth'})}
+function chooseService(i){idx=i;service.value=i;refresh();goBook()}
+function currentProducts(){return SERVICES[idx].heater?(HEATER_CATALOG[heater.value]||[]):(PRODUCT_CATALOG[idx]||[])}
+function flowfixProductPrice(retail){return +(retail*1.15).toFixed(2)}
+function renderProducts(){
+ const list=currentProducts();productGrid.innerHTML='';
+ list.forEach(x=>{
+   const level=x[0],model=x[1],brand=x[2];
+   const desc=SERVICES[idx].heater?'':x[3];
+   const retail=SERVICES[idx].heater?+x[3]:+x[4];
+   const image=SERVICES[idx].heater?x[4]:x[5];
+   const link=SERVICES[idx].heater?x[5]:x[6];
+   const price=flowfixProductPrice(retail);
+   productGrid.innerHTML+=`<div class="product-card ${level===tier?'active':''}" data-level="${level}" onclick="setTier('${level}')">
+     <img class="product-photo" src="${image}" alt="${model}">
+     <div class="pcopy">
+       <div class="level">${level.toUpperCase()}${level==='better'?' ⭐':''}</div>
+       <div class="model">${model}</div>
+       <div class="brandx">${brand}</div>
+       ${desc?`<div class="retail">${desc}</div>`:''}
+       <div class="pprice">€${price.toFixed(2)}</div>
+       <div class="retail">Precio FlowFix · IVA incluido</div>
+       <a class="source-link" href="${link}" target="_blank" onclick="event.stopPropagation()">Ver producto en Leroy Merlin ↗</a>
+     </div>
+   </div>`;
+ });
+}
+function setProduct(v){if(v==='supply'&&!SERVICES[idx].product)return;pm=v;own.classList.toggle('active',v==='own');supply.classList.toggle('active',v==='supply');productGrid.style.display=v==='supply'?'grid':'none';productNotice.style.display=v==='supply'?'block':'none';if(v==='supply')renderProducts();refreshSummary()}
+function setTier(v){tier=v;renderProducts();refreshSummary()}
+function setRemoval(v){removal=v;noRemoval.classList.toggle('active',!v);yesRemoval.classList.toggle('active',v);refreshSummary()}
+function installPrice(){const base=SERVICES[idx].heater?HEATER_LABOR[heater.value]:SERVICES[idx].base;return +(base*1.21).toFixed(2)}
+function refresh(){
+ const s=SERVICES[idx];
+ heaterWrap.style.display=s.heater?'block':'none';
+ removalWrap.style.display=s.removal?'block':'none';
+ removalLabel.textContent='Retirada del termo antiguo / Old heater removal';
+ supply.style.display=s.product?'block':'none';
+ productField.style.display=s.product?'block':'none';
+ if(!s.product){pm='own';productGrid.style.display='none';productNotice.style.display='none'}
+ if(!s.removal){removal=false;noRemoval.classList.add('active');yesRemoval.classList.remove('active')}
+ if(pm==='supply'&&s.product){productGrid.style.display='grid';renderProducts()} refreshSummary();
+}
+function refreshSummary(){
+ const s=SERVICES[idx],ip=installPrice();
+ sumService.textContent=lang==='es'?s.es:s.en;sumArea.textContent=area.value;sumPrice.textContent='€'+ip.toFixed(2)+' IVA incl.';
+ sumRemovalRow.style.display=(s.removal&&removal)?'flex':'none';
+ let prodPrice=0,prodName=lang==='es'?'Propio':'Own';
+ if(pm==='supply'){const x=currentProducts().find(a=>a[0]===tier)||currentProducts()[0];if(x){prodPrice=flowfixProductPrice(SERVICES[idx].heater?+x[3]:+x[4]);prodName=x[1]+' · €'+prodPrice.toFixed(2)}}
+ sumProduct.textContent=prodName;
+  sumTotal.textContent='€'+(ip+prodPrice+(s.removal&&removal?20:0)).toFixed(2);
+}
+
+async function loadAvailability(){
+  const d=date.value;
+  time.innerHTML='<option value="">Cargando disponibilidad...</option>';
+  if(!d){time.innerHTML='<option value="">Elige una fecha primero</option>';return}
+  try{
+    const duration=SERVICE_DURATION_MIN[idx]||60;
+    const r=await fetch(`/.netlify/functions/availability?date=${encodeURIComponent(d)}&duration=${duration}`,{cache:'no-store'});
+    const data=await r.json();
+    if(!r.ok) throw new Error(data.error||'availability error');
+    if(data.closed){
+      time.innerHTML=`<option value="">${lang==='es'?'Cerrado ese día':'Closed that day'}</option>`;
+      return;
+    }
+    if(!data.slots.length){
+      time.innerHTML=`<option value="">${lang==='es'?'Sin horarios disponibles':'No times available'}</option>`;
+      return;
+    }
+    time.innerHTML=data.slots.map(x=>`<option value="${x}">${x}</option>`).join('');
+  }catch(e){
+    time.innerHTML=`<option value="">${lang==='es'?'Disponibilidad no disponible — contacta por WhatsApp':'Availability unavailable — contact us on WhatsApp'}</option>`;
+  }
+}
+
+function bookingRef(){if(!ref)ref='FF-'+Math.floor(100000+Math.random()*900000);return ref}
+function confirmBooking(){
+ for(const id of ['date','name','phone','address'])if(!document.getElementById(id).value){alert(lang==='es'?'Completa los campos obligatorios.':'Complete the required fields.');return}
+ if(!privacy.checked){alert(lang==='es'?'Debes aceptar la Política de Privacidad.':'You must accept the Privacy Policy.');return}
+ const r=bookingRef(),s=SERVICES[idx],serviceName=lang==='es'?s.es:s.en,remText=(s.removal&&removal)?'Sí / Yes — €20':'No';
+ let prodText=lang==='es'?'Producto propio':'Own product';
+ if(pm==='supply'){const x=currentProducts().find(a=>a[0]===tier)||currentProducts()[0];if(x)prodText=`FlowFix — ${x[1]} — €${flowfixProductPrice(SERVICES[idx].heater?+x[3]:+x[4]).toFixed(2)} IVA incl.`;}
+ const payText=lang==='es'?'Sin pago por adelantado — pago al finalizar':'No upfront payment — pay after completion';
+ const msg=lang==='es'
+ ?`Hola FlowFix. Quiero solicitar una cita.\n\nReferencia: ${r}\nServicio: ${serviceName}\nZona: ${area.value}\nFecha preferida: ${date.value}\nHora preferida: ${time.value}\nProducto: ${prodText}\nRetirada opcional: ${remText}\nPago: ${payText}\nNombre: ${name.value}\nTeléfono: ${phone.value}\nDirección: ${address.value}\nDetalles: ${notes.value||'—'}\n\nPuedo enviar ubicación exacta y fotos por este chat.`
+ :`Hello FlowFix. I would like to request an appointment.\n\nReference: ${r}\nService: ${serviceName}\nArea: ${area.value}\nPreferred date: ${date.value}\nPreferred time: ${time.value}\nProduct: ${prodText}\nOptional removal: ${remText}\nPayment: ${payText}\nName: ${name.value}\nPhone: ${phone.value}\nAddress: ${address.value}\nDetails: ${notes.value||'—'}\n\nI can send my exact location and photos in this chat.`;
+ window.open(`https://wa.me/${FLOWFIX_WHATSAPP}?text=${encodeURIComponent(msg)}`,'_blank');
+ success.style.display='block';success.textContent=(lang==='es'?'Solicitud preparada':'Request prepared')+' — '+r+'. '+(lang==='es'?'Envíala por WhatsApp y FlowFix confirmará la cita.':'Send it on WhatsApp and FlowFix will confirm the appointment.');
+ success.scrollIntoView({behavior:'smooth'});
+}
+
+
+function requestReview(){
+  const msg='Hola FlowFix. Ya habéis terminado mi trabajo y me gustaría dejar una opinión. ¿Me envías el enlace, por favor?';
+  window.open(`https://wa.me/${FLOWFIX_WHATSAPP}?text=${encodeURIComponent(msg)}`,'_blank');
+}
+
+function requestPaymentLink(){
+ const msg=lang==='es'
+   ? 'Hola FlowFix. El trabajo ya está terminado y necesito mi enlace de pago. Referencia: FF-______'
+   : 'Hello FlowFix. The job is complete and I need my payment link. Reference: FF-______';
+ window.open(`https://wa.me/${FLOWFIX_WHATSAPP}?text=${encodeURIComponent(msg)}`,'_blank');
+}
+
+function setLang(l){
+ lang=l;
+ document.documentElement.lang=l;
+ if(document.getElementById('langES')) document.getElementById('langES').classList.toggle('active-lang',l==='es');
+ if(document.getElementById('langEN')) document.getElementById('langEN').classList.toggle('active-lang',l==='en');heroTitle.innerHTML=l==='es'?'¿Un trabajo pequeño de fontanería? <em>Lo hacemos.</em>':'Small plumbing job? <em>We’ll do it.</em>';
+ heroText.textContent=l==='es'?'FlowFix se especializa en trabajos domésticos que a menudo son difíciles de reservar: grifos de baño y cocina, duchas, reparaciones de cisternas, termos eléctricos y pequeñas reparaciones.':'FlowFix specialises in everyday plumbing jobs that can be hard to book: bathroom and kitchen taps, showers, toilet cistern repairs, electric water heaters and small repairs.';
+ servicesTitle.textContent=l==='es'?'¿Qué necesitas?':'What do you need?';servicesSub.textContent=l==='es'?'Elige el trabajo que mejor se adapte a tu situación.':'Choose the job that best matches what you need.';
+ SERVICES.forEach((s,i)=>{document.getElementById('svcName'+i).textContent=l==='es'?s.es:s.en;document.getElementById('svcDesc'+i).textContent=l==='es'?s.descEs:s.descEn;service.options[i].textContent=l==='es'?s.es:s.en});
+ refreshSummary();
+}
+refresh();
+</script>
+</body>
+</html>

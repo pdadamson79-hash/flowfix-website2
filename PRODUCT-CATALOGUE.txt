@@ -1,0 +1,47 @@
+FLOWFIX PRODUCT CATALOGUE — CURRENT REFERENCE PRICES
+
+Pricing method: Leroy Merlin consumer retail price (already VAT-inclusive) × 1.15 FlowFix margin.
+No second 21% VAT is added to the Leroy retail price.
+
+Bathroom taps
+- BUDGET: ROCA Roca Mitos: Leroy €54.99 -> FlowFix €63.24 IVA incl.
+- GOOD: GROHE GROHE Swift New: Leroy €52.90 -> FlowFix €60.83 IVA incl.
+- BETTER: ROCA Roca Alpine: Leroy €72.99 -> FlowFix €83.94 IVA incl.
+- PREMIUM: GROHE GROHE Start Clova: Leroy €79.99 -> FlowFix €91.99 IVA incl.
+
+Kitchen taps
+- BUDGET: ROCA Roca Mitos horizontal: Leroy €61.99 -> FlowFix €71.29 IVA incl.
+- GOOD: ROCA Roca Mitos high spout: Leroy €62.99 -> FlowFix €72.44 IVA incl.
+- BETTER: GROHE GROHE kitchen mixer: Leroy €93.90 -> FlowFix €107.98 IVA incl.
+- PREMIUM: ROCA Roca Nauta pull-out: Leroy €117.00 -> FlowFix €134.55 IVA incl.
+
+Shower mixers
+- BUDGET: ROCA Roca Mitos-N: Leroy €53.99 -> FlowFix €62.09 IVA incl.
+- GOOD: ROCA Roca Mitos: Leroy €54.59 -> FlowFix €62.78 IVA incl.
+- BETTER: GROHE GROHE Get: Leroy €89.00 -> FlowFix €102.35 IVA incl.
+- PREMIUM: ROCA Roca Mitos T thermostatic: Leroy €143.00 -> FlowFix €164.45 IVA incl.
+
+Electric water heaters
+50 L
+- BUDGET: Ariston BLU1 B 50L: Leroy €149.00 -> FlowFix €171.35 IVA incl.
+- GOOD: Ariston BLUE ECO 50L: Leroy €175.00 -> FlowFix €201.25 IVA incl.
+- BETTER: Ariston LYDOS ECO 50L: Leroy €207.00 -> FlowFix €238.05 IVA incl.
+- PREMIUM: Ariston LYDOS ECO 50L: Leroy €207.00 -> FlowFix €238.05 IVA incl.
+80 L
+- BUDGET: Equation Analógico 80L: Leroy €129.00 -> FlowFix €148.35 IVA incl.
+- GOOD: Ariston BLU1 B 80L: Leroy €169.00 -> FlowFix €194.35 IVA incl.
+- BETTER: Ariston LYDOS ECO 80L: Leroy €229.00 -> FlowFix €263.35 IVA incl.
+- PREMIUM: Ariston LYDOS PLUS 80L: Leroy €287.00 -> FlowFix €330.05 IVA incl.
+100 L
+- BUDGET: Ariston BLU1 B 100L: Leroy €189.00 -> FlowFix €217.35 IVA incl.
+- GOOD: Ariston SHAPE 100L: Leroy €299.00 -> FlowFix €343.85 IVA incl.
+- BETTER: Ariston LYDOS PLUS 100L: Leroy €329.00 -> FlowFix €378.35 IVA incl.
+- PREMIUM: Ariston LYDOS PLUS 100L: Leroy €329.00 -> FlowFix €378.35 IVA incl.
+150 L
+- BUDGET: TESY 150L: Leroy €189.00 -> FlowFix €217.35 IVA incl.
+- GOOD: TESY 150L: Leroy €189.00 -> FlowFix €217.35 IVA incl.
+- BETTER: Bosch Tronic 8000 150L: Leroy €461.00 -> FlowFix €530.15 IVA incl.
+- PREMIUM: Bosch Tronic 8000 150L: Leroy €461.00 -> FlowFix €530.15 IVA incl.
+
+IMPORTANT: Leroy Merlin prices and availability can change. Recheck before purchasing for a customer.
+Some capacities currently do not have four genuinely distinct suitable direct-stock products in the research set; duplicate tier placeholders are intentionally used rather than inventing products.

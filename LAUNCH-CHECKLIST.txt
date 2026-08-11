@@ -1,0 +1,41 @@
+FLOWFIX — CHECKLIST ANTES DE PUBLICAR
+
+YA CONFIGURADO
+- Marca: FlowFix
+- NIF: Y1582641W
+- Teléfono/WhatsApp: +34 627 128 765
+- Zona: Avilés y Castrillón
+- Solicitudes por WhatsApp
+- Cliente puede compartir ubicación y fotos en WhatsApp
+- Español / inglés
+- Servicios y precios de partida
+- Páginas: Aviso Legal, Privacidad, Cookies, Condiciones
+- Sin analítica/publicidad de terceros en esta versión
+
+OBLIGATORIO COMPLETAR ANTES DE LANZAR
+1. Titular configurado: Paul David Adamson.
+2. Domicilio profesional configurado: El Reguero 95, Bajo, Las Barzanas, 33456, Asturias, España
+3. Email de contacto: info@flowfix.es.
+4. IVA configurado: los precios base son antes de IVA y la web muestra +21% IVA incluido.
+5. Horario real de atención/trabajo.
+6. Política de cancelación/no-show.
+7. Garantía exacta que ofreces en mano de obra y productos.
+8. Dominio definitivo.
+9. Hosting HTTPS.
+10. Revisar textos legales con un profesional si tu actividad, tratamientos de datos o condiciones tienen particularidades.
+
+PARA PAGOS ONLINE REALES
+- Abrir/configurar una cuenta de proveedor de pagos (p. ej. Stripe u otro).
+- No guardar números de tarjeta en el sitio.
+- Actualizar privacidad/cookies si el proveedor introduce cookies o nuevos tratamientos.
+
+PARA CONFIRMACIONES AUTOMÁTICAS DE WHATSAPP
+- Se necesita WhatsApp Business Platform/API o un proveedor compatible.
+- Sin API, usa la plantilla confirmation-template.txt para responder manualmente.
+
+ANTES DE INDEXAR EN GOOGLE
+- Añadir dominio/canonical y sitemap real.
+- Google Business Profile con el mismo nombre, teléfono y zona.
+- Añadir fotos reales de trabajos terminados cuando existan.
+
+- Bizum configurado: 627 128 765. Recomendado usar referencia de reserva como concepto.

@@ -1,0 +1,12 @@
+FLOWFIX — DOMAIN & EMAIL
+
+Domain: flowfix.es
+Website: https://www.flowfix.es
+Business email: info@flowfix.es
+Phone / WhatsApp / Bizum: +34 627 128 765
+
+When hosting the site:
+1. Point flowfix.es and www.flowfix.es to the hosting provider.
+2. Keep Dinahosting email DNS/MX records active so info@flowfix.es continues to work.
+3. Do not overwrite MX records when connecting the website.
+4. Enable HTTPS/SSL.

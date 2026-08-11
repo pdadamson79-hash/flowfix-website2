@@ -1,0 +1,1 @@
+The main hero and service photos in this build are generated FlowFix-style imagery packaged locally with the site. Product-supply cards remain separate from these general service images.

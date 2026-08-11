@@ -1,0 +1,7 @@
+FLOWFIX PRODUCT IMAGE SOURCES
+
+Product photos included in this build were retrieved from Leroy Merlin / ADEO product media for the corresponding supplied-item catalogue.
+
+Prices are reference prices checked against Leroy Merlin Spain and may change. FlowFix product selling price in the site is calculated as current Leroy Merlin VAT-inclusive retail reference x 1.15.
+
+Where a 150 L tier does not have a genuinely distinct verified suitable option, the same verified model is intentionally repeated rather than inventing a product.

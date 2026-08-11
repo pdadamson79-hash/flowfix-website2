@@ -1,0 +1,6 @@
+FLOWFIX LANGUAGE SETUP
+
+Primary/default language: Spanish (ES)
+Secondary language: English (EN)
+
+The website opens in Spanish. Customers can switch to English using the EN button in the header.

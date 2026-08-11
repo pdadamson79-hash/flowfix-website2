@@ -1,0 +1,33 @@
+FLOWFIX — REAL BOOKING REQUEST / CONFIRM SYSTEM
+
+CUSTOMER
+1. Chooses service, date and preferred time.
+2. Sends the request from flowfix.es.
+3. Netlify Forms stores it as booking-request.
+4. Website shows: PENDING CONFIRMATION.
+5. Customer can then send location/photos by WhatsApp.
+
+OWNER
+1. Netlify dashboard -> site -> Forms -> booking-request.
+2. Open the new submission.
+3. Use admin-confirmar.html.
+4. Enter/copy reference, customer phone, service and requested date/time.
+5. Choose:
+   - CONFIRMAR CITA
+   - PROPONER OTRO HORARIO
+   - DECLINAR
+6. Button opens WhatsApp with the correct customer message.
+
+IMPORTANT NETLIFY SETUP
+- In Netlify, enable Forms / automatic form detection, then redeploy this site.
+- Set an email notification for form booking-request to info@flowfix.es.
+- Each form submission will also remain available in the Netlify Forms dashboard.
+- The requested time is NOT automatically blocked from other customers yet.
+  To prevent double booking, confirmed appointments should be added to your calendar.
+  A later phase can connect live availability to a real calendar/database.
+
+ADMIN PAGE
+https://www.flowfix.es/admin-confirmar.html
+This page does not expose bookings. You manually copy a submission from the secured Netlify dashboard into it.
+
+No upfront payments are required.

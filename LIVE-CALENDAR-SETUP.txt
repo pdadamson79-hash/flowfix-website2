@@ -1,0 +1,36 @@
+FLOWFIX — LIVE CALENDAR
+
+WORKING HOURS
+Monday–Thursday: 09:30–18:00
+Friday: 09:30–16:00
+Saturday/Sunday: closed
+
+SERVICE BLOCKS
+Bathroom tap: 60 min
+Kitchen tap: 60 min
+Shower: 90 min
+Toilet cistern repair: 60 min
+Electric water heater: 120 min
+Small repairs: 60 min
+
+HOW IT WORKS
+- Customers choose a date.
+- Website loads only currently available start times.
+- Pending requests do not block the diary.
+- When you confirm a booking in admin-confirmar.html, its time interval is stored.
+- Confirmed time disappears from the customer calendar.
+- Changing a confirmed booking releases the old interval and blocks the new one.
+- Cancelling/declining a confirmed booking releases its time.
+
+REQUIRED NETLIFY SETUP
+1. Project configuration -> Environment variables.
+2. Add FLOWFIX_ADMIN_KEY.
+3. Set a private password only you know.
+4. Redeploy.
+5. Use that same password in admin-confirmar.html.
+
+IMPORTANT
+This package uses Netlify Functions + Netlify Blobs, so deploy it through a Netlify workflow that builds/functions correctly (Git-connected deploy or Netlify CLI), not only as plain static files.
+
+ADMIN PAGE
+/admin-confirmar.html

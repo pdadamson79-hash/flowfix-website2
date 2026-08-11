@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FlowFix | Confirmar citas</title>
+<style>
+:root{--n:#071d38;--b:#0b6efd;--l:#dfe7f0;--m:#66788d}*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#f5f8fc;color:#10243e}.wrap{max-width:760px;margin:30px auto;padding:0 18px}.brand{font-weight:900;font-size:28px;color:var(--n);margin-bottom:18px}.brand span{color:var(--b)}.card{background:white;border:1px solid var(--l);border-radius:16px;padding:22px;margin-bottom:16px}h1{margin-top:0;font-size:28px}label{font-size:13px;font-weight:800;display:block;margin:11px 0 5px}input,select,textarea{width:100%;padding:12px;border:1px solid var(--l);border-radius:9px;font:inherit}.two{display:grid;grid-template-columns:1fr 1fr;gap:11px}.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}button{border:0;border-radius:10px;padding:13px;font-weight:900;cursor:pointer}.confirm{background:#128c62;color:white}.change{background:#0b6efd;color:white}.decline{background:#fff1f1;color:#a32121;border:1px solid #efc5c5}.info{font-size:13px;line-height:1.55;color:var(--m);background:#f7faff;padding:12px;border-radius:10px}.netlify{margin-top:12px;font-size:13px}@media(max-width:600px){.two,.btns{grid-template-columns:1fr}}</style>
+</head><body><div class="wrap"><div class="brand">FLOW<span>FIX</span></div>
+<div class="card"><h1>Confirmar o cambiar una cita</h1>
+<p class="info">Primero abre <strong>Netlify → tu sitio → Forms → booking-request</strong> para ver la solicitud del cliente. Copia aquí su referencia y teléfono. Esta página no muestra la base de datos de clientes: sirve para preparar la respuesta por WhatsApp.</p>
+<label>Clave de administrador</label><input id="adminKey" type="password" placeholder="Clave configurada en Netlify">
+<label>Referencia FlowFix</label><input id="ref" placeholder="FF-123456">
+<input id="confirmedKey" type="hidden">
+<label>Nombre del cliente</label><input id="name" placeholder="Nombre">
+<label>Teléfono / WhatsApp del cliente</label><input id="phone" placeholder="Ej. 627123456">
+<label>Servicio</label><select id="service">
+<option value="Grifo de baño" data-duration="60">Grifo de baño — 60 min</option>
+<option value="Grifo de cocina" data-duration="60">Grifo de cocina — 60 min</option>
+<option value="Ducha" data-duration="90">Ducha — 90 min</option>
+<option value="Reparación de cisterna" data-duration="60">Reparación de cisterna — 60 min</option>
+<option value="Termo eléctrico" data-duration="120">Termo eléctrico — 120 min</option>
+<option value="Pequeñas reparaciones" data-duration="60">Pequeñas reparaciones — 60 min</option>
+</select>
+<div class="two"><div><label>Fecha solicitada</label><input id="requestedDate" type="date"></div><div><label>Hora solicitada</label><input id="requestedTime" type="time"></div></div>
+<hr style="border:0;border-top:1px solid #e3e9f0;margin:20px 0">
+<strong>Si quieres cambiar la cita:</strong>
+<div class="two"><div><label>Nueva fecha</label><input id="newDate" type="date"></div><div><label>Nueva hora</label><input id="newTime" type="time"></div></div>
+<label>Nota opcional</label><textarea id="note" placeholder="Ej. Puedo ir a las 15:30 en lugar de las 14:00."></textarea>
+<div class="btns"><button class="confirm" onclick="sendConfirm()">✓ Confirmar cita</button><button class="change" onclick="sendChange()">↔ Proponer otro horario</button></div>
+<button class="decline" style="width:100%;margin-top:10px" onclick="sendDecline()">Declinar solicitud</button>
+<p class="netlify"><strong>Calendario en vivo:</strong> cuando confirmas, ese intervalo se bloquea y deja de aparecer para nuevos clientes. Si cambias o cancelas una cita confirmada, el horario anterior se libera.</p>
+</div></div>
+<script>
+function digits(v){let d=(v||'').replace(/\D/g,'');if(d.length===9)d='34'+d;return d}
+function duration(){return +service.options[service.selectedIndex].dataset.duration}
+function base(){return {r:ref.value.trim(),n:name.value.trim()||'cliente',p:digits(phone.value),s:service.value}}
+function openWa(msg,p){if(!p){alert('Falta el teléfono del cliente');return}window.open('https://wa.me/'+p+'?text='+encodeURIComponent(msg),'_blank')}
+async function api(body){
+ const key=adminKey.value.trim();
+ if(!key) throw new Error('Falta la clave de administrador');
+ const r=await fetch('/.netlify/functions/manage-booking',{method:'POST',headers:{'content-type':'application/json','x-flowfix-admin-key':key},body:JSON.stringify(body)});
+ const data=await r.json();
+ if(!r.ok) throw new Error(data.error||'Error');
+ return data;
+}
+async function sendConfirm(){
+ const x=base();
+ if(!x.r||!requestedDate.value||!requestedTime.value){alert('Completa referencia, fecha y hora');return}
+ try{
+   const data=await api({action:'confirm',date:requestedDate.value,time:requestedTime.value,duration:duration(),reference:x.r});
+   confirmedKey.value=data.key;
+   openWa(`Hola ${x.n}. FlowFix confirma tu cita ✅\n\nReferencia: ${x.r}\nServicio: ${x.s}\nFecha: ${requestedDate.value}\nHora: ${requestedTime.value}\n\nNo necesitas pagar por adelantado. Si necesitas enviarnos ubicación o fotos, responde a este chat.`,x.p);
+ }catch(e){alert('No se pudo confirmar: '+e.message)}
+}
+async function sendChange(){
+ const x=base();
+ if(!x.r||!newDate.value||!newTime.value){alert('Completa referencia y el nuevo horario');return}
+ try{
+   const body={action:confirmedKey.value?'move':'confirm',date:newDate.value,time:newTime.value,duration:duration(),reference:x.r};
+   if(confirmedKey.value) body.oldKey=confirmedKey.value;
+   const data=await api(body);
+   confirmedKey.value=data.key;
+   openWa(`Hola ${x.n}. Gracias por tu solicitud ${x.r}. Podemos proponerte:\n\nServicio: ${x.s}\nNueva fecha: ${newDate.value}\nNueva hora: ${newTime.value}\n${note.value?'\n'+note.value:''}\n\n¿Te viene bien? Responde SÍ para confirmarlo.`,x.p);
+ }catch(e){alert('No se pudo cambiar: '+e.message)}
+}
+async function sendDecline(){
+ const x=base();
+ try{
+   if(confirmedKey.value){
+     await api({action:'release',key:confirmedKey.value});
+     confirmedKey.value='';
+   }
+   openWa(`Hola ${x.n}. Gracias por contactar con FlowFix. En esta ocasión no podemos aceptar la solicitud ${x.r}. Si quieres, puedes enviarnos otro día/horario y veremos disponibilidad.`,x.p);
+ }catch(e){alert('No se pudo liberar la cita: '+e.message)}
+}
+</script></body></html>

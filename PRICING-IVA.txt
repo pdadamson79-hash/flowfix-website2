@@ -1,0 +1,21 @@
+FLOWFIX — PRECIOS CON 21% IVA
+
+Precio base (antes IVA) -> Precio cliente (IVA incluido)
+
+Grifo: €65.00 -> €78.65
+Ducha: €85.00 -> €102.85
+Reparación de cisterna: €75.00 -> €90.75 IVA incl. (piezas aparte)
+Lavabo: €85.00 -> €102.85
+Pequeñas reparaciones: €75.00 -> €90.75
+
+Termos eléctricos — instalación:
+50 L: €125.00 -> €151.25
+80 L: €145.00 -> €175.45
+100 L: €165.00 -> €199.65
+150 L: €195.00 -> €235.95
+
+Productos suministrados:
+coste/referencia + 15% de margen, después +21% IVA.
+El precio final al consumidor debe mostrarse/confirmarse con IVA incluido.
+
+Retirada opcional de termo eléctrico antiguo: €20.00 IVA incluido.

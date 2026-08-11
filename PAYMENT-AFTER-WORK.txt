@@ -1,0 +1,21 @@
+FLOWFIX — PAYMENT POLICY
+
+NO UPFRONT PAYMENTS.
+
+Customer flow:
+1. Customer books the job.
+2. FlowFix confirms the appointment.
+3. Work is completed.
+4. Final agreed amount is confirmed.
+5. Customer pays using the FlowFix job reference.
+
+Payment methods after completion:
+- Secure card payment link
+- Bizum: 627 128 765
+- Cash
+
+Recommended payment reference:
+FF-XXXXXX
+
+Never request card numbers through WhatsApp.
+Real card links require a live payment provider such as Stripe.
