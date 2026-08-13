@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>FlowFix | Fontanería fácil en Avilés, Castrillón, Soto del Barco y Muros de Nalón</title>
-<meta name="description" content="Fontanería para pequeños trabajos en Avilés, Castrillón, Soto del Barco y Muros de Nalón. Grifos de baño y cocina, duchas, inodoros, termos eléctricos y más. Reserva por WhatsApp.">
+<meta name="description" content="Fontanería para pequeños trabajos en Avilés, Castrillón, Soto del Barco y Muros de Nalón. Grifos de baño y cocina, duchas, cisternas, termos eléctricos y pequeñas reparaciones. Reserva por WhatsApp.">
 <link rel="canonical" href="https://www.flowfix.es/">
 <meta name="theme-color" content="#071d38">
 <style>
@@ -102,6 +102,8 @@ footer{padding:26px 0}
 
 .phone-mini{font-size:12px;font-weight:700;opacity:.82;white-space:nowrap}
 @media(max-width:700px){.phone-mini{display:none}}
+.pill{white-space:normal;line-height:1.35}
+@media(max-width:650px){.pill{font-size:11px;max-width:100%}}
 </style>
 </head>
 <body>
@@ -126,7 +128,7 @@ footer{padding:26px 0}
 
 <header><div class="container nav"><div class="brand">FLOW<span>FIX</span></div><div class="nav-actions"><a class="phone-mini" href="tel:+34627128765">Contacto: 627 128 765</a><button class="lang active-lang" id="langES" onclick="setLang('es')">ES</button><button class="lang" id="langEN" onclick="setLang('en')">EN</button><button class="cta desktop" onclick="goBook()">Reservar ahora</button></div></div></header>
 
-<section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="pill">📍 Avilés · Castrillón</span><h1 id="heroTitle">Fontanería fácil. <em>Reserva en minutos.</em></h1><p id="heroText">Pequeñas reparaciones e instalaciones en Avilés, Castrillón, Soto del Barco y Muros de Nalón. Elige el trabajo, solicita día y hora y espera nuestra confirmación.</p><div class="hero-actions"><button class="cta" onclick="goBook()">Reservar ahora</button><a class="outline" href="https://wa.me/34627128765" target="_blank">WhatsApp</a></div></div><div class="hero-photo"><img src="hero-plumber.jpg" alt="FlowFix plumber carrying out a small plumbing repair"></div></div></section>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="pill">📍 Avilés · Castrillón · Soto del Barco · Muros de Nalón</span><h1 id="heroTitle">Fontanería fácil. <em>Reserva en minutos.</em></h1><p id="heroText">Pequeñas reparaciones e instalaciones en Avilés, Castrillón, Soto del Barco y Muros de Nalón. Elige el trabajo, solicita día y hora y espera nuestra confirmación.</p><div class="hero-actions"><button class="cta" onclick="goBook()">Reservar ahora</button><a class="outline" href="https://wa.me/34627128765" target="_blank">WhatsApp</a></div></div><div class="hero-photo"><img src="hero-plumber.jpg" alt="FlowFix plumber carrying out a small plumbing repair"></div></div></section>
 
 <section class="section soft" id="services"><div class="container"><div class="head"><h2 id="servicesTitle">Elige tu servicio</h2><p id="servicesSub">Precios claros.</p></div><div class="services" id="cards"></div><div class="assist"><div><strong>¿No tienes claro qué reparación necesitas?</strong><br><span style="color:var(--muted)">Envíanos una foto por WhatsApp y te orientamos.</span></div><button class="outline" onclick="chooseService(5)">Enviar foto por WhatsApp →</button></div></div></section>
 
@@ -142,7 +144,7 @@ footer{padding:26px 0}
 <div class="product-grid" id="productGrid" style="display:none"></div>
 <div class="notice" id="productNotice" style="display:none">Los precios de producto mostrados ya incluyen el margen FlowFix y el IVA. Precio y disponibilidad se reconfirman antes de comprar.</div></div>
 
-<div class="field"><label>3. Zona / Area</label><select id="area"><option>Avilés</option><option>Castrillón</option></select></div>
+<div class="field"><label>3. Zona / Area</label><select id="area"><option>Avilés</option><option>Castrillón</option><option>Soto del Barco</option><option>Muros de Nalón</option></select></div>
 <div class="notice">La cita queda pendiente hasta que FlowFix la confirme. Si no podemos ese horario, te proponemos otro.</div>
 <div class="two"><div class="field"><label>4. Fecha preferida / Preferred date</label><input id="date" type="date"></div><div class="field"><label>Hora disponible / Available time</label><select id="time"><option value="">Elige una fecha primero</option></select></div></div>
 <div class="notice" id="hoursNotice">Horario: lunes–viernes 09:30–18:00 · sábados y domingos cerrado. Los horarios confirmados desaparecen automáticamente.</div>

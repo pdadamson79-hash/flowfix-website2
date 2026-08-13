@@ -1,0 +1,11 @@
+VISIBLE SERVICE AREAS
+- Avilés
+- Castrillón
+- Soto del Barco
+- Muros de Nalón
+
+Updated in:
+- Homepage location badge
+- Booking area dropdown
+- Homepage/service-area text
+- SEO structured data
