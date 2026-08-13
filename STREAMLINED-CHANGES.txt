@@ -7,7 +7,6 @@ Kept:
 - Owner confirmation workflow
 - Supplied-product choices
 - WhatsApp
-- No upfront payment
 - Reviews framework
 - SEO/legal pages
 - Netlify Forms / Functions

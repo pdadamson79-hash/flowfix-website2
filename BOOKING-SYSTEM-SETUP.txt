@@ -29,5 +29,3 @@ IMPORTANT NETLIFY SETUP
 ADMIN PAGE
 https://www.flowfix.es/admin-confirmar.html
 This page does not expose bookings. You manually copy a submission from the secured Netlify dashboard into it.
-
-No upfront payments are required.

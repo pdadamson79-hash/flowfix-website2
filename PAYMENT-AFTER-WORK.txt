@@ -1,6 +1,5 @@
 FLOWFIX — PAYMENT POLICY
 
-NO UPFRONT PAYMENTS.
 
 Customer flow:
 1. Customer books the job.
