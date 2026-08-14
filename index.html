@@ -116,6 +116,15 @@ footer{padding:26px 0}
   .lang-badge{font-size:16px;margin-left:4px}
 }
 
+
+.lang-badge{display:inline-flex;align-items:center;gap:6px;margin-left:8px;vertical-align:middle}
+.lang-badge .flag{display:inline-block;width:24px;height:16px;border-radius:2px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.35)}
+.lang-badge .flag svg{display:block;width:100%;height:100%}
+@media(max-width:700px){
+  .lang-badge{gap:4px;margin-left:4px}
+  .lang-badge .flag{width:21px;height:14px}
+}
+
 </style>
 </head>
 <body>
@@ -138,7 +147,23 @@ footer{padding:26px 0}
   <textarea name="details"></textarea>
 </form>
 
-<header><div class="container nav"><div class="brand">FLOW<span>FIX</span></div><div class="nav-actions"><a class="phone-mini" href="tel:+34627128765">Contacto: 627 128 765</a><span class="lang-badge" title="Atención en español e inglés">🇪🇸 🇬🇧</span><button class="cta desktop" onclick="goBook()">Reservar ahora</button></div></div></header>
+<header><div class="container nav"><div class="brand">FLOW<span>FIX</span></div><div class="nav-actions"><a class="phone-mini" href="tel:+34627128765">Contacto: 627 128 765</a><span class="lang-badge" title="Atención en español e inglés" aria-label="Español e inglés">
+  <span class="flag flag-es" aria-hidden="true">
+    <svg viewBox="0 0 30 20" role="img">
+      <rect width="30" height="20" fill="#AA151B"/>
+      <rect y="5" width="30" height="10" fill="#F1BF00"/>
+    </svg>
+  </span>
+  <span class="flag flag-gb" aria-hidden="true">
+    <svg viewBox="0 0 30 20" role="img">
+      <rect width="30" height="20" fill="#012169"/>
+      <path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="4"/>
+      <path d="M0 0L30 20M30 0L0 20" stroke="#C8102E" stroke-width="2"/>
+      <path d="M15 0V20M0 10H30" stroke="#fff" stroke-width="6"/>
+      <path d="M15 0V20M0 10H30" stroke="#C8102E" stroke-width="3.5"/>
+    </svg>
+  </span>
+</span><button class="cta desktop" onclick="goBook()">Reservar ahora</button></div></div></header>
 
 <section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="pill">📍 Avilés · Castrillón · Soto del Barco · Muros de Nalón</span><h1 id="heroTitle">Fontanería fácil. <em>Reserva en minutos.</em></h1><p id="heroText">Pequeñas reparaciones e instalaciones en Avilés, Castrillón, Soto del Barco y Muros de Nalón. Elige el trabajo, solicita día y hora y espera nuestra confirmación.</p><div class="hero-actions"><button class="cta" onclick="goBook()">Reservar ahora</button><a class="outline" href="https://wa.me/34627128765" target="_blank">WhatsApp</a></div></div><div class="hero-photo"><img src="hero-plumber.jpg" alt="FlowFix plumber carrying out a small plumbing repair"></div></div></section>
 
