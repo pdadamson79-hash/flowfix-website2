@@ -1,0 +1,1 @@
+FlowFix: versión solo en español. Se ha eliminado el selector de idioma y los principales textos visibles en inglés.

@@ -104,6 +104,18 @@ footer{padding:26px 0}
 @media(max-width:700px){.phone-mini{display:none}}
 .pill{white-space:normal;line-height:1.35}
 @media(max-width:650px){.pill{font-size:11px;max-width:100%}}
+
+.lang-badge{
+  font-size:18px;
+  line-height:1;
+  margin-left:8px;
+  opacity:.9;
+  white-space:nowrap;
+}
+@media(max-width:700px){
+  .lang-badge{font-size:16px;margin-left:4px}
+}
+
 </style>
 </head>
 <body>
@@ -126,32 +138,32 @@ footer{padding:26px 0}
   <textarea name="details"></textarea>
 </form>
 
-<header><div class="container nav"><div class="brand">FLOW<span>FIX</span></div><div class="nav-actions"><a class="phone-mini" href="tel:+34627128765">Contacto: 627 128 765</a><button class="lang active-lang" id="langES" onclick="setLang('es')">ES</button><button class="lang" id="langEN" onclick="setLang('en')">EN</button><button class="cta desktop" onclick="goBook()">Reservar ahora</button></div></div></header>
+<header><div class="container nav"><div class="brand">FLOW<span>FIX</span></div><div class="nav-actions"><a class="phone-mini" href="tel:+34627128765">Contacto: 627 128 765</a><span class="lang-badge" title="Español / English">🇪🇸 🇬🇧</span><button class="cta desktop" onclick="goBook()">Reservar ahora</button></div></div></header>
 
 <section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="pill">📍 Avilés · Castrillón · Soto del Barco · Muros de Nalón</span><h1 id="heroTitle">Fontanería fácil. <em>Reserva en minutos.</em></h1><p id="heroText">Pequeñas reparaciones e instalaciones en Avilés, Castrillón, Soto del Barco y Muros de Nalón. Elige el trabajo, solicita día y hora y espera nuestra confirmación.</p><div class="hero-actions"><button class="cta" onclick="goBook()">Reservar ahora</button><a class="outline" href="https://wa.me/34627128765" target="_blank">WhatsApp</a></div></div><div class="hero-photo"><img src="hero-plumber.jpg" alt="FlowFix plumber carrying out a small plumbing repair"></div></div></section>
 
-<section class="section soft" id="services"><div class="container"><div class="head"><h2 id="servicesTitle">Elige tu servicio</h2><p id="servicesSub">Precios claros.</p></div><div class="services" id="cards"></div><div class="assist"><div><strong>¿No tienes claro qué reparación necesitas?</strong><br><span style="color:var(--muted)">Envíanos una foto por WhatsApp y te orientamos.</span></div><button class="outline" onclick="chooseService(5)">Enviar foto por WhatsApp →</button></div></div></section>
+<section class="section soft" id="services"><div class="container"><div class="head"><h2 id="servicesTitle">Elige tu servicio</h2><p id="servicesSub">Precios claros.</p></div><div class="services" id="cards"></div><div class="assist"><div><strong>¿No tienes claro qué reparación necesitas?</strong><br><span style="color:var(--muted)">Envíanos una foto por WhatsApp y te orientamos.</span></div><button class="outline" onclick="chooseServicio(5)">Enviar foto por WhatsApp →</button></div></div></section>
 
 <section class="bookwrap" id="book"><div class="container"><div class="head"><h2 id="bookTitle">Solicita tu cita</h2><p>Elige fecha y hora. FlowFix confirma antes de la visita.</p></div><div class="booking"><div class="form"><div class="success" id="success"></div>
 
-<div class="field"><label>1. Servicio / Service</label><select id="service"></select></div>
+<div class="field"><label>1. Servicio</label><select id="service"></select></div>
 
-<div class="field" id="heaterWrap" style="display:none"><label>Tamaño del termo / Water heater size</label><select id="heater"><option value="50">50 L — instalación €151.25 IVA incl.</option><option value="80">80 L — instalación €175.45 IVA incl.</option><option value="100">100 L — instalación €199.65 IVA incl.</option><option value="150">150 L — instalación €235.95 IVA incl.</option></select></div>
+<div class="field" id="heaterWrap" style="display:none"><label>Tamaño del termo</label><select id="heater"><option value="50">50 L — instalación €151.25 IVA incl.</option><option value="80">80 L — instalación €175.45 IVA incl.</option><option value="100">100 L — instalación €199.65 IVA incl.</option><option value="150">150 L — instalación €235.95 IVA incl.</option></select></div>
 
-<div class="field" id="removalWrap" style="display:none"><label id="removalLabel">Retirada opcional / Optional removal</label><div class="choices"><div class="choice active" id="noRemoval" onclick="setRemoval(false)"><strong>No</strong><br><small>Sin retirada</small></div><div class="choice" id="yesRemoval" onclick="setRemoval(true)"><strong>+ €20.00</strong><br><small>IVA incluido</small></div></div></div>
+<div class="field" id="removalWrap" style="display:none"><label id="removalLabel">Retirada opcional</label><div class="choices"><div class="choice active" id="noRemoval" onclick="setRemoval(false)"><strong>No</strong><br><small>Sin retirada</small></div><div class="choice" id="yesRemoval" onclick="setRemoval(true)"><strong>+ €20.00</strong><br><small>IVA incluido</small></div></div></div>
 
-<div class="field" id="productField"><label>2. Producto / Product</label><div class="choices"><div class="choice active" id="own" onclick="setProduct('own')"><strong>Tengo el mío</strong><br><small>I have my own</small></div><div class="choice" id="supply" onclick="setProduct('supply')"><strong>FlowFix lo suministra</strong><br><small>FlowFix supplies it</small></div></div>
+<div class="field" id="productField"><label>2. Productoo</label><div class="choices"><div class="choice active" id="own" onclick="setProducto('own')"><strong>Tengo el mío</strong><br><small>Tengo el mío</small></div><div class="choice" id="supply" onclick="setProducto('supply')"><strong>FlowFix lo suministra</strong><br><small>FlowFix lo suministra</small></div></div>
 <div class="product-grid" id="productGrid" style="display:none"></div>
 <div class="notice" id="productNotice" style="display:none">Los precios de producto mostrados ya incluyen el margen FlowFix y el IVA. Precio y disponibilidad se reconfirman antes de comprar.</div></div>
 
-<div class="field"><label>3. Zona / Area</label><select id="area"><option>Avilés</option><option>Castrillón</option><option>Soto del Barco</option><option>Muros de Nalón</option></select></div>
+<div class="field"><label>3. Zona</label><select id="area"><option>Avilés</option><option>Castrillón</option><option>Soto del Barco</option><option>Muros de Nalón</option></select></div>
 <div class="notice">La cita queda pendiente hasta que FlowFix la confirme. Si no podemos ese horario, te proponemos otro.</div>
-<div class="two"><div class="field"><label>4. Fecha preferida / Preferred date</label><input id="date" type="date"></div><div class="field"><label>Hora disponible / Available time</label><select id="time"><option value="">Elige una fecha primero</option></select></div></div>
+<div class="two"><div class="field"><label>4. Fecha preferida</label><input id="date" type="date"></div><div class="field"><label>Hora disponible</label><select id="time"><option value="">Elige una fecha primero</option></select></div></div>
 <div class="notice" id="hoursNotice">Horario: lunes–viernes 09:30–18:00 · sábados y domingos cerrado. Los horarios confirmados desaparecen automáticamente.</div>
 
-<div class="two"><div class="field"><label>Nombre / Name</label><input id="name"></div><div class="field"><label>Teléfono / Phone</label><input id="phone"></div></div>
-<div class="two"><div class="field"><label>Email</label><input id="email" type="email"></div><div class="field"><label>Dirección / Address</label><input id="address"></div></div>
-<div class="field"><label>Describe el trabajo / Job details</label><textarea id="notes" placeholder="Ej.: el grifo de cocina gotea y quiero sustituirlo..."></textarea></div>
+<div class="two"><div class="field"><label>Nombre</label><input id="name"></div><div class="field"><label>Teléfono</label><input id="phone"></div></div>
+<div class="two"><div class="field"><label>Email</label><input id="email" type="email"></div><div class="field"><label>Dirección</label><input id="address"></div></div>
+<div class="field"><label>Describe el trabajo</label><textarea id="notes" placeholder="Ej.: el grifo de cocina gotea y quiero sustituirlo..."></textarea></div>
 
 <div class="notice" style="background:#edf8f1;border-color:#b9e4d0;color:#145c41">
 <strong>✓  / </strong><br>
@@ -162,7 +174,7 @@ Reserva ahora y paga únicamente cuando el trabajo esté terminado y el importe 
 <button class="cta" style="width:100%;margin-top:14px" onclick="confirmBooking()">Enviar solicitud de cita</button>
 </div>
 
-<aside class="summary"><h3>Resumen / Summary</h3><div class="row"><span>Servicio</span><strong id="sumService">—</strong></div><div class="row"><span>Zona</span><strong id="sumArea">Avilés</strong></div><div class="row"><span>Instalación</span><strong id="sumPrice">€0</strong></div><div class="row" id="sumRemovalRow" style="display:none"><span>Retirada opcional</span><strong>€20.00</strong></div><div class="row"><span>Producto</span><strong id="sumProduct">Propio</strong></div><div class="row"><span>Pago</span><strong>Después del trabajo</strong></div><div class="row total"><span>Total instalación</span><span id="sumTotal">€0</span></div><p class="small">Todos los precios de instalación mostrados incluyen 21% IVA. Los productos suministrados por FlowFix se añaden aparte con precio final IVA incluido confirmado antes de comprar.</p></aside>
+<aside class="summary"><h3>Resumen / Resumen</h3><div class="row"><span>Servicio</span><strong id="sumServicio">—</strong></div><div class="row"><span>Zona</span><strong id="sumZona">Avilés</strong></div><div class="row"><span>Instalación</span><strong id="sumPrice">€0</strong></div><div class="row" id="sumRemovalRow" style="display:none"><span>Retirada opcional</span><strong>€20.00</strong></div><div class="row"><span>Productoo</span><strong id="sumProducto">Propio</strong></div><div class="row"><span>Pago</span><strong>Después del trabajo</strong></div><div class="row total"><span>Total instalación</span><span id="sumTotal">€0</span></div><p class="small">Todos los precios de instalación mostrados incluyen 21% IVA. Los productos suministrados por FlowFix se añaden aparte con precio final IVA incluido confirmado antes de comprar.</p></aside>
 
 </div></div></div></section>
 
@@ -188,7 +200,7 @@ Reserva ahora y paga únicamente cuando el trabajo esté terminado y el importe 
         <strong>Pago al finalizar el trabajo</strong><br>
         <span style="color:var(--muted)">Puedes pagar con tarjeta mediante enlace seguro, Bizum o efectivo.</span>
       </div>
-      <button class="outline" onclick="requestPaymentLink()">Pago de trabajo terminado →</button>
+      <button class="outline" onclick="requestPagoLink()">Pago de trabajo terminado →</button>
     </div>
   </div>
 </section>
@@ -198,12 +210,12 @@ Reserva ahora y paga únicamente cuando el trabajo esté terminado y el importe 
 <script>
 const FLOWFIX_WHATSAPP='34627128765';
 const SERVICES=[
- {img:'bathroom-tap-photo.jpg',es:'Grifo de baño',en:'Bathroom tap',descEs:'Sustitución estándar de grifo de lavabo.',descEn:'Standard bathroom tap replacement.',base:65,product:true,removal:false},
- {img:'kitchen-tap-photo.jpg',es:'Grifo de cocina',en:'Kitchen tap',descEs:'Sustitución estándar de grifo de fregadero.',descEn:'Standard kitchen tap replacement.',base:65,product:true,removal:false},
- {img:'shower-photo.jpg',es:'Ducha',en:'Shower',descEs:'Sustitución de grifería de ducha expuesta.',descEn:'Exposed shower mixer replacement.',base:85,product:true,removal:false},
- {img:'cistern-photo.jpg',es:'Reparación de cisterna',en:'Toilet cistern repair',descEs:'Cisternas que gotean, no llenan o no descargan correctamente.',descEn:'Cisterns that run, fail to fill or do not flush correctly.',base:75,product:false,removal:false},
- {img:'heater-photo.jpg',es:'Termo eléctrico',en:'Electric water heater',descEs:'Instalación o sustitución hasta 150 L.',descEn:'Installation or replacement up to 150 L.',base:125,product:true,removal:true,heater:true},
- {img:'repair-photo.jpg',es:'Pequeñas reparaciones',en:'Small repairs',descEs:'Fugas, llaves de paso, conexiones, cisternas y más.',descEn:'Leaks, valves, connections, cisterns and more.',base:75,product:false,removal:false}
+ {img:'bathroom-tap-photo.jpg',es:'Grifo de baño',en:'Grifo de baño',descEs:'Sustitución estándar de grifo de lavabo.',descEn:'Standard bathroom tap replacement.',base:65,product:true,removal:false},
+ {img:'kitchen-tap-photo.jpg',es:'Grifo de cocina',en:'Grifo de cocina',descEs:'Sustitución estándar de grifo de fregadero.',descEn:'Standard kitchen tap replacement.',base:65,product:true,removal:false},
+ {img:'shower-photo.jpg',es:'Ducha',en:'Ducha',descEs:'Sustitución de grifería de ducha expuesta.',descEn:'Exposed shower mixer replacement.',base:85,product:true,removal:false},
+ {img:'cistern-photo.jpg',es:'Reparación de cisterna',en:'Reparación de cisterna',descEs:'Cisternas que gotean, no llenan o no descargan correctamente.',descEn:'Cisterns that run, fail to fill or do not flush correctly.',base:75,product:false,removal:false},
+ {img:'heater-photo.jpg',es:'Termo eléctrico',en:'Termo eléctrico',descEs:'Instalación o sustitución hasta 150 L.',descEn:'Instalación or replacement up to 150 L.',base:125,product:true,removal:true,heater:true},
+ {img:'repair-photo.jpg',es:'Pequeñas reparaciones',en:'Pequeñas reparaciones',descEs:'Fugas, llaves de paso, conexiones, cisternas y más.',descEn:'Leaks, valves, connections, cisterns and more.',base:75,product:false,removal:false}
 ];
 
 const PRODUCT_CATALOG={
@@ -259,28 +271,28 @@ let lang='es',idx=0,pm='own',tier='better',removal=false,ref=null;
 
 const cards=document.getElementById('cards'),service=document.getElementById('service');
 SERVICES.forEach((s,i)=>{
- cards.innerHTML+=`<article class="service" onclick="chooseService(${i})"><img src="${s.img}" alt=""><div class="service-body"><h3 id="svcName${i}">${s.es}</h3><p id="svcDesc${i}">${s.descEs}</p><div class="from">Desde</div><div class="price">€${(s.base*1.21).toFixed(2)}${i===5?'+':''}</div><div class="vat">IVA incluido</div></div></article>`;
+ cards.innerHTML+=`<article class="service" onclick="chooseServicio(${i})"><img src="${s.img}" alt=""><div class="service-body"><h3 id="svcName${i}">${s.es}</h3><p id="svcDesc${i}">${s.descEs}</p><div class="from">Desde</div><div class="price">€${(s.base*1.21).toFixed(2)}${i===5?'+':''}</div><div class="vat">IVA incluido</div></div></article>`;
  service.innerHTML+=`<option value="${i}">${s.es}</option>`;
 });
 date.min=new Date().toISOString().slice(0,10);
 date.addEventListener('change',loadAvailability);
 service.addEventListener('change',loadAvailability);
 service.onchange=()=>{idx=+service.value;refresh()};
-heater.onchange=()=>{if(pm==='supply')renderProducts();refreshSummary()};area.onchange=refreshSummary;
+heater.onchange=()=>{if(pm==='supply')renderProductos();refreshResumen()};area.onchange=refreshResumen;
 
 function goBook(){book.scrollIntoView({behavior:'smooth'})}
-function chooseService(i){idx=i;service.value=i;refresh();goBook()}
-function currentProducts(){return SERVICES[idx].heater?(HEATER_CATALOG[heater.value]||[]):(PRODUCT_CATALOG[idx]||[])}
-function flowfixProductPrice(retail){return +(retail*1.15).toFixed(2)}
-function renderProducts(){
- const list=currentProducts();productGrid.innerHTML='';
+function chooseServicio(i){idx=i;service.value=i;refresh();goBook()}
+function currentProductos(){return SERVICES[idx].heater?(HEATER_CATALOG[heater.value]||[]):(PRODUCT_CATALOG[idx]||[])}
+function flowfixProductoPrice(retail){return +(retail*1.15).toFixed(2)}
+function renderProductos(){
+ const list=currentProductos();productGrid.innerHTML='';
  list.forEach(x=>{
    const level=x[0],model=x[1],brand=x[2];
    const desc=SERVICES[idx].heater?'':x[3];
    const retail=SERVICES[idx].heater?+x[3]:+x[4];
    const image=SERVICES[idx].heater?x[4]:x[5];
    const link=SERVICES[idx].heater?x[5]:x[6];
-   const price=flowfixProductPrice(retail);
+   const price=flowfixProductoPrice(retail);
    productGrid.innerHTML+=`<div class="product-card ${level===tier?'active':''}" data-level="${level}" onclick="setTier('${level}')">
      <img class="product-photo" src="${image}" alt="${model}">
      <div class="pcopy">
@@ -295,9 +307,9 @@ function renderProducts(){
    </div>`;
  });
 }
-function setProduct(v){if(v==='supply'&&!SERVICES[idx].product)return;pm=v;own.classList.toggle('active',v==='own');supply.classList.toggle('active',v==='supply');productGrid.style.display=v==='supply'?'grid':'none';productNotice.style.display=v==='supply'?'block':'none';if(v==='supply')renderProducts();refreshSummary()}
-function setTier(v){tier=v;renderProducts();refreshSummary()}
-function setRemoval(v){removal=v;noRemoval.classList.toggle('active',!v);yesRemoval.classList.toggle('active',v);refreshSummary()}
+function setProducto(v){if(v==='supply'&&!SERVICES[idx].product)return;pm=v;own.classList.toggle('active',v==='own');supply.classList.toggle('active',v==='supply');productGrid.style.display=v==='supply'?'grid':'none';productNotice.style.display=v==='supply'?'block':'none';if(v==='supply')renderProductos();refreshResumen()}
+function setTier(v){tier=v;renderProductos();refreshResumen()}
+function setRemoval(v){removal=v;noRemoval.classList.toggle('active',!v);yesRemoval.classList.toggle('active',v);refreshResumen()}
 function installPrice(){const base=SERVICES[idx].heater?HEATER_LABOR[heater.value]:SERVICES[idx].base;return +(base*1.21).toFixed(2)}
 function refresh(){
  const s=SERVICES[idx];
@@ -308,15 +320,15 @@ function refresh(){
  productField.style.display=s.product?'block':'none';
  if(!s.product){pm='own';productGrid.style.display='none';productNotice.style.display='none'}
  if(!s.removal){removal=false;noRemoval.classList.add('active');yesRemoval.classList.remove('active')}
- if(pm==='supply'&&s.product){productGrid.style.display='grid';renderProducts()} refreshSummary();
+ if(pm==='supply'&&s.product){productGrid.style.display='grid';renderProductos()} refreshResumen();
 }
-function refreshSummary(){
+function refreshResumen(){
  const s=SERVICES[idx],ip=installPrice();
- sumService.textContent=lang==='es'?s.es:s.en;sumArea.textContent=area.value;sumPrice.textContent='€'+ip.toFixed(2)+' IVA incl.';
+ sumServicio.textContent=lang==='es'?s.es:s.en;sumZona.textContent=area.value;sumPrice.textContent='€'+ip.toFixed(2)+' IVA incl.';
  sumRemovalRow.style.display=(s.removal&&removal)?'flex':'none';
- let prodPrice=0,prodName=lang==='es'?'Propio':'Own';
- if(pm==='supply'){const x=currentProducts().find(a=>a[0]===tier)||currentProducts()[0];if(x){prodPrice=flowfixProductPrice(SERVICES[idx].heater?+x[3]:+x[4]);prodName=x[1]+' · €'+prodPrice.toFixed(2)}}
- sumProduct.textContent=prodName;
+ let prodPrice=0,prodName=lang==='es'?'Propio':'Propio';
+ if(pm==='supply'){const x=currentProductos().find(a=>a[0]===tier)||currentProductos()[0];if(x){prodPrice=flowfixProductoPrice(SERVICES[idx].heater?+x[3]:+x[4]);prodName=x[1]+' · €'+prodPrice.toFixed(2)}}
+ sumProducto.textContent=prodName;
   sumTotal.textContent='€'+(ip+prodPrice+(s.removal&&removal?20:0)).toFixed(2);
 }
 
@@ -330,30 +342,30 @@ async function loadAvailability(){
     const data=await r.json();
     if(!r.ok) throw new Error(data.error||'availability error');
     if(data.closed){
-      time.innerHTML=`<option value="">${lang==='es'?'Cerrado ese día':'Closed that day'}</option>`;
+      time.innerHTML=`<option value="">Cerrado ese día</option>`;
       return;
     }
     if(!data.slots.length){
-      time.innerHTML=`<option value="">${lang==='es'?'Sin horarios disponibles':'No times available'}</option>`;
+      time.innerHTML=`<option value="">Sin horarios disponibles</option>`;
       return;
     }
     time.innerHTML=data.slots.map(x=>`<option value="${x}">${x}</option>`).join('');
   }catch(e){
-    time.innerHTML=`<option value="">${lang==='es'?'Disponibilidad no disponible — contacta por WhatsApp':'Availability unavailable — contact us on WhatsApp'}</option>`;
+    time.innerHTML=`<option value="">Disponibilidad no disponible — contacta por WhatsApp</option>`;
   }
 }
 
 function bookingRef(){if(!ref)ref='FF-'+Math.floor(100000+Math.random()*900000);return ref}
 function confirmBooking(){
- for(const id of ['date','name','phone','address'])if(!document.getElementById(id).value){alert(lang==='es'?'Completa los campos obligatorios.':'Complete the required fields.');return}
- if(!privacy.checked){alert(lang==='es'?'Debes aceptar la Política de Privacidad.':'You must accept the Privacy Policy.');return}
+ for(const id of ['date','name','phone','address'])if(!document.getElementById(id).value){alert('Completa los campos obligatorios.');return}
+ if(!privacy.checked){alert('Debes aceptar la Política de Privacidad.');return}
  const r=bookingRef(),s=SERVICES[idx],serviceName=lang==='es'?s.es:s.en,remText=(s.removal&&removal)?'Sí / Yes — €20':'No';
- let prodText=lang==='es'?'Producto propio':'Own product';
- if(pm==='supply'){const x=currentProducts().find(a=>a[0]===tier)||currentProducts()[0];if(x)prodText=`FlowFix — ${x[1]} — €${flowfixProductPrice(SERVICES[idx].heater?+x[3]:+x[4]).toFixed(2)} IVA incl.`;}
+ let prodText=lang==='es'?'Productoo propio':'Propio product';
+ if(pm==='supply'){const x=currentProductos().find(a=>a[0]===tier)||currentProductos()[0];if(x)prodText=`FlowFix — ${x[1]} — €${flowfixProductoPrice(SERVICES[idx].heater?+x[3]:+x[4]).toFixed(2)} IVA incl.`;}
  const payText=lang==='es'?' — pago al finalizar':' — pay after completion';
  const msg=lang==='es'
- ?`Hola FlowFix. Quiero solicitar una cita.\n\nReferencia: ${r}\nServicio: ${serviceName}\nZona: ${area.value}\nFecha preferida: ${date.value}\nHora preferida: ${time.value}\nProducto: ${prodText}\nRetirada opcional: ${remText}\nPago: ${payText}\nNombre: ${name.value}\nTeléfono: ${phone.value}\nDirección: ${address.value}\nDetalles: ${notes.value||'—'}\n\nPuedo enviar ubicación exacta y fotos por este chat.`
- :`Hello FlowFix. I would like to request an appointment.\n\nReference: ${r}\nService: ${serviceName}\nArea: ${area.value}\nPreferred date: ${date.value}\nPreferred time: ${time.value}\nProduct: ${prodText}\nOptional removal: ${remText}\nPayment: ${payText}\nName: ${name.value}\nPhone: ${phone.value}\nAddress: ${address.value}\nDetails: ${notes.value||'—'}\n\nI can send my exact location and photos in this chat.`;
+ ?`Hola FlowFix. Quiero solicitar una cita.\n\nReferencia: ${r}\nServicio: ${serviceName}\nZona: ${area.value}\nFecha preferida: ${date.value}\nHora preferida: ${time.value}\nProductoo: ${prodText}\nRetirada opcional: ${remText}\nPago: ${payText}\nNombre: ${name.value}\nTeléfono: ${phone.value}\nDirección: ${address.value}\nDetalles: ${notes.value||'—'}\n\nPuedo enviar ubicación exacta y fotos por este chat.`
+ :`Hello FlowFix. I would like to request an appointment.\n\nReference: ${r}\nServicio: ${serviceName}\nZona: ${area.value}\nPreferred date: ${date.value}\nPreferred time: ${time.value}\nProducto: ${prodText}\nOptional removal: ${remText}\nPago: ${payText}\nName: ${name.value}\nPhone: ${phone.value}\nAddress: ${address.value}\nDetails: ${notes.value||'—'}\n\nI can send my exact location and photos in this chat.`;
  window.open(`https://wa.me/${FLOWFIX_WHATSAPP}?text=${encodeURIComponent(msg)}`,'_blank');
  success.style.display='block';success.textContent=(lang==='es'?'Solicitud preparada':'Request prepared')+' — '+r+'. '+(lang==='es'?'Envíala por WhatsApp y FlowFix confirmará la cita.':'Send it on WhatsApp and FlowFix will confirm the appointment.');
  success.scrollIntoView({behavior:'smooth'});
@@ -365,7 +377,7 @@ function requestReview(){
   window.open(`https://wa.me/${FLOWFIX_WHATSAPP}?text=${encodeURIComponent(msg)}`,'_blank');
 }
 
-function requestPaymentLink(){
+function requestPagoLink(){
  const msg=lang==='es'
    ? 'Hola FlowFix. El trabajo ya está terminado y necesito mi enlace de pago. Referencia: FF-______'
    : 'Hello FlowFix. The job is complete and I need my payment link. Reference: FF-______';
@@ -373,132 +385,12 @@ function requestPaymentLink(){
 }
 
 
-const UI_TEXT={
-  es:{
-    heroTitle:'Fontanería fácil. <em>Reserva en minutos.</em>',
-    heroText:'Pequeñas reparaciones e instalaciones en Avilés, Castrillón, Soto del Barco y Muros de Nalón. Elige el trabajo, solicita día y hora y espera nuestra confirmación.',
-    servicesTitle:'Elige tu servicio',
-    servicesSub:'Precios claros y reserva sencilla.',
-    bookTitle:'Solicita tu cita',
-    bookSub:'Elige fecha y hora. FlowFix confirma antes de la visita.',
-    pending:'La cita queda pendiente hasta que FlowFix la confirme. Si no podemos ese horario, te proponemos otro.',
-    hours:'Horario: lunes–viernes 09:30–18:00 · sábados y domingos cerrado. Los horarios confirmados desaparecen automáticamente.',
-    paymentTitle:'Pago al finalizar el trabajo',
-    paymentText:'Puedes pagar con tarjeta mediante enlace seguro, Bizum o efectivo.',
-    payButton:'Pago de trabajo terminado →',
-    reviewTitle:'Opiniones reales, no testimonios inventados',
-    reviewText:'Publicaremos reseñas verificadas de clientes a medida que FlowFix complete trabajos.',
-    reviewButton:'Dejar una opinión →',
-    localTitle:'Fontanero en Avilés, Castrillón, Soto del Barco y Muros de Nalón',
-    localText:'Grifos, duchas, cisternas, termos eléctricos y pequeñas reparaciones domésticas.',
-    contact:'Contacto: 627 128 765',
-    reserve:'Reservar ahora',
-    whatsapp:'WhatsApp',
-    request:'Enviar solicitud de cita',
-    photoHelp:'Después de enviar, puedes mandarnos ubicación y fotos por WhatsApp.',
-    summary:'Resumen',
-    service:'Servicio',
-    area:'Zona',
-    install:'Instalación',
-    product:'Producto',
-    payment:'Pago',
-    afterWork:'Después del trabajo',
-    total:'Total instalación'
-  },
-  en:{
-    heroTitle:'Simple plumbing. <em>Book in minutes.</em>',
-    heroText:'Small plumbing repairs and installations in Avilés, Castrillón, Soto del Barco and Muros de Nalón. Choose the job, request a day and time, and wait for our confirmation.',
-    servicesTitle:'Choose your service',
-    servicesSub:'Clear prices and simple booking.',
-    bookTitle:'Request an appointment',
-    bookSub:'Choose a date and time. FlowFix confirms before the visit.',
-    pending:'Your appointment remains pending until FlowFix confirms it. If that time is not available, we will propose another.',
-    hours:'Hours: Monday–Friday 09:30–18:00 · Saturday and Sunday closed. Confirmed times disappear automatically.',
-    paymentTitle:'Pay when the work is complete',
-    paymentText:'Pay by secure card link, Bizum or cash.',
-    payButton:'Pay for completed job →',
-    reviewTitle:'Real customer reviews only',
-    reviewText:'We will publish verified customer reviews as FlowFix completes jobs.',
-    reviewButton:'Leave a review →',
-    localTitle:'Plumber in Avilés, Castrillón, Soto del Barco and Muros de Nalón',
-    localText:'Taps, showers, toilet cisterns, electric water heaters and small household plumbing repairs.',
-    contact:'Contact: 627 128 765',
-    reserve:'Book now',
-    whatsapp:'WhatsApp',
-    request:'Send appointment request',
-    photoHelp:'After sending your request, you can send us your location and photos on WhatsApp.',
-    summary:'Summary',
-    service:'Service',
-    area:'Area',
-    install:'Installation',
-    product:'Product',
-    payment:'Payment',
-    afterWork:'After the job',
-    total:'Installation total'
-  }
-};
 
-function applyFullLanguage(l){
-  const x=UI_TEXT[l];
-  document.documentElement.lang=l;
-  if(document.getElementById('heroTitle')) document.getElementById('heroTitle').innerHTML=x.heroTitle;
-  if(document.getElementById('heroText')) document.getElementById('heroText').textContent=x.heroText;
-  if(document.getElementById('servicesTitle')) document.getElementById('servicesTitle').textContent=x.servicesTitle;
-  if(document.getElementById('servicesSub')) document.getElementById('servicesSub').textContent=x.servicesSub;
-  if(document.getElementById('bookTitle')) document.getElementById('bookTitle').textContent=x.bookTitle;
-  const bookHead=document.querySelector('#book .head p'); if(bookHead) bookHead.textContent=x.bookSub;
-  const notices=[...document.querySelectorAll('#book .notice')];
-  notices.forEach(n=>{
-    if(n.textContent.includes('PENDIENTE')||n.textContent.includes('pendiente')||n.textContent.includes('appointment remains')) n.textContent=x.pending;
-    if(n.id==='hoursNotice') n.textContent=x.hours;
-  });
-  const wa=document.querySelector('#book .wa span'); if(wa) wa.textContent=x.photoHelp;
-  const sendBtn=[...document.querySelectorAll('#book button.cta')].find(b=>b.textContent.includes('solicitud')||b.textContent.includes('appointment request')); if(sendBtn) sendBtn.textContent=x.request;
-  const payment=document.querySelector('#payment-after .assist'); if(payment){
-    const strong=payment.querySelector('strong'), span=payment.querySelector('span'), btn=payment.querySelector('button');
-    if(strong) strong.textContent=x.paymentTitle; if(span) span.textContent=x.paymentText; if(btn) btn.textContent=x.payButton;
-  }
-  const review=document.querySelector('#reviews .review-cta'); if(review){
-    const strong=review.querySelector('strong'), span=review.querySelector('span'), btn=review.querySelector('button');
-    if(strong) strong.textContent=x.reviewTitle; if(span) span.textContent=x.reviewText; if(btn) btn.textContent=x.reviewButton;
-  }
-  const local=document.querySelector('#zonas .head'); if(local){
-    const h=local.querySelector('h2'), p=local.querySelector('p'); if(h) h.textContent=x.localTitle; if(p) p.textContent=x.localText;
-  }
-  document.querySelectorAll('.phone-mini').forEach(el=>el.textContent=x.contact);
-  document.querySelectorAll('button.cta').forEach(el=>{if(el.textContent.trim()==='Reservar ahora'||el.textContent.trim()==='Book now') el.textContent=x.reserve;});
-  const labels=[...document.querySelectorAll('.summary .row span')];
-  labels.forEach(el=>{
-    const s=el.textContent.trim();
-    if(['Servicio','Service'].includes(s)) el.textContent=x.service;
-    if(['Zona','Area'].includes(s)) el.textContent=x.area;
-    if(['Instalación','Installation'].includes(s)) el.textContent=x.install;
-    if(['Producto','Product'].includes(s)) el.textContent=x.product;
-    if(['Pago','Payment'].includes(s)) el.textContent=x.payment;
-  });
-  const summaryH=document.querySelector('.summary h3'); if(summaryH) summaryH.textContent=x.summary;
-  const totalLabel=document.querySelector('.summary .total span:first-child'); if(totalLabel) totalLabel.textContent=x.total;
-  const paySummary=document.querySelector('.summary .row strong'); 
-  localStorage.setItem('flowfixLang',l);
-}
 
-function setLang(l){
- lang=l;
- document.documentElement.lang=l;
- if(document.getElementById('langES')) document.getElementById('langES').classList.toggle('active-lang',l==='es');
- if(document.getElementById('langEN')) document.getElementById('langEN').classList.toggle('active-lang',l==='en');heroTitle.innerHTML=l==='es'?'Fontanería fácil. <em>Reserva en minutos.</em>':'Small plumbing job? <em>We’ll do it.</em>';
- heroText.textContent=l==='es'?'Pequeñas reparaciones e instalaciones en Avilés, Castrillón, Soto del Barco y Muros de Nalón. Elige el trabajo, solicita día y hora y espera nuestra confirmación.':'FlowFix specialises in everyday plumbing jobs that can be hard to book: bathroom and kitchen taps, showers, toilet cistern repairs, electric water heaters and small repairs.';
- servicesTitle.textContent=l==='es'?'Elige tu servicio':'What do you need?';servicesSub.textContent=l==='es'?'Precios claros.':'Choose the job that best matches what you need.';
- SERVICES.forEach((s,i)=>{document.getElementById('svcName'+i).textContent=l==='es'?s.es:s.en;document.getElementById('svcDesc'+i).textContent=l==='es'?s.descEs:s.descEn;service.options[i].textContent=l==='es'?s.es:s.en});
- refreshSummary();
- applyFullLanguage(l);
-}
+
 refresh();
 
-document.addEventListener('DOMContentLoaded',()=>{
-  const saved=localStorage.getItem('flowfixLang')||'es';
-  setLang(saved);
-});
+
 
 </script>
 </body>
