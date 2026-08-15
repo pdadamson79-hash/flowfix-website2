@@ -1,0 +1,12 @@
+FlowFix mobile UX improvements:
+- Fixed Spanish-only text regressions and Productoo/Resumen typos.
+- Larger 48px touch targets and 16px form controls.
+- Mobile-friendly phone/email keyboards and autocomplete.
+- Added mobile sticky Call + Book actions.
+- Booking summary moved after the form on small screens.
+- Product cards simplified to one per row on phones.
+- Lazy-loaded non-critical images; hero prioritized and dimensions reserved.
+- Added focus states and better form validation/focus.
+- Local-date minimum avoids timezone edge cases.
+- Preserved Netlify availability functions and booking workflow.
+- Removed redundant payment-after-work promotional block from the booking flow.

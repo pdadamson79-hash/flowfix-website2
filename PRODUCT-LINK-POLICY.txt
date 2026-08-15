@@ -1,0 +1,9 @@
+FLOWFIX - ENLACES DE PRODUCTO
+
+El botón “Ver producto” solo aparece cuando existe una ficha oficial exacta del fabricante verificada.
+
+Fichas exactas verificadas en esta versión:
+- ARISTON VELIS PRO 80L -> ficha oficial Ariston España
+- TESY BiLight 150L -> ficha oficial TESY España
+
+Los demás botones se ocultan temporalmente cuando el nombre/modelo del catálogo no tiene una ficha oficial individual verificable o parece ser una denominación exclusiva de distribuidor. Esto evita enviar clientes a páginas genéricas o a productos incorrectos.

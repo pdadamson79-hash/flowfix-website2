@@ -1,0 +1,3 @@
+FlowFix product pages updated with the product photographs already present in the website catalogue.
+Pages updated: 21
+Official manufacturer-detail links already verified in the catalogue have been preserved.
