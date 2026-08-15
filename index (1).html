@@ -126,63 +126,45 @@ footer{padding:26px 0}
 }
 
 
-/* MOBILE UX REVIEW — 2026 */
-button,a.cta,a.outline,.choice,.tier,.product-card{touch-action:manipulation}
-button,.cta,.outline,.phone-mini{min-height:48px}
+/* MOBILE SAFE OPTIMISATION */
+button,.cta,.outline,.choice,.tier,.product-card,a{touch-action:manipulation}
 .field input,.field select,.field textarea{min-height:48px;font-size:16px}
-.field textarea{min-height:110px}
-.choice{min-height:58px}
-button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.choice:focus-visible,.product-card:focus-visible{
+.field textarea{min-height:105px}
+.cta,.outline,button{min-height:46px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
  outline:3px solid #69b7ff;outline-offset:2px
 }
-.mobile{padding-bottom:env(safe-area-inset-bottom);display:none}
-.mobile-bar{display:grid;grid-template-columns:.72fr 1.28fr;gap:8px;background:rgba(255,255,255,.96);padding:8px;border:1px solid var(--line);border-radius:15px;box-shadow:0 10px 30px rgba(7,29,56,.18);backdrop-filter:blur(10px)}
-.mobile-bar a,.mobile-bar button{width:100%;display:flex;align-items:center;justify-content:center}
-.form-progress{display:none}
 @media(max-width:650px){
- body{padding-bottom:94px}
- .container{padding-left:16px;padding-right:16px}
+ body{padding-bottom:84px}
+ .container{padding-left:15px;padding-right:15px}
  .nav{height:62px}
  .brand{font-size:24px}
- .phone-mini{display:none}
- .lang-badge .flag{width:24px;height:16px}
- .hero{padding:20px 0 28px}
+ .hero{padding:20px 0 26px}
  .hero-grid{gap:18px}
  .hero-photo{border-radius:16px}
- .hero-photo img{min-height:190px;max-height:230px}
+ .hero-photo img{min-height:190px;max-height:235px}
  .hero h1{font-size:34px;line-height:1.07}
  .hero p{font-size:16px;line-height:1.5}
  .hero-actions{display:grid;grid-template-columns:1fr 1fr}
  .hero-actions .cta,.hero-actions .outline{display:flex;align-items:center;justify-content:center;text-align:center}
- .pill{font-size:12px;line-height:1.35}
- .section{padding:28px 0}
- .head h2{font-size:26px}
  .services{grid-template-columns:1fr 1fr;gap:9px}
  .service-body{padding:10px}
- .service h3{font-size:15px}
- .price{font-size:21px}
- .assist{padding:15px}
- .bookwrap{padding:30px 0}
+ .service h3{font-size:14px}
+ .service .price{font-size:19px}
+ .bookwrap{padding:28px 0}
  .booking{border-radius:14px}
- .summary{order:2;padding:18px}
  .form{padding:18px 14px}
+ .summary{padding:18px}
  .two{grid-template-columns:1fr}
- .choices{grid-template-columns:1fr 1fr}
  .product-grid{grid-template-columns:1fr!important}
- .product-card{display:grid;grid-template-columns:120px 1fr;min-height:0}
- .product-card .product-photo{height:100%;min-height:150px;aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--line);padding:8px}
- .product-card .pcopy{padding:10px}
- .product-card .model{font-size:13px!important}
- .product-card .pprice{font-size:19px!important}
- .summary .row{margin:9px 0}
- .foot{gap:14px}
- .mobile{display:block;bottom:8px;left:8px;right:8px}
+ .product-card{min-height:0}
+ .summary .row{margin:10px 0}
+ .mobile{bottom:8px;left:8px;right:8px}
+ .mobile button{min-height:52px}
 }
 @media(max-width:390px){
  .services{grid-template-columns:1fr}
  .hero-actions{grid-template-columns:1fr}
- .nav-actions{gap:3px}
- .lang-badge{margin-left:2px}
 }
 
 </style>
@@ -223,11 +205,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
       <path d="M15 0V20M0 10H30" stroke="#C8102E" stroke-width="3.5"/>
     </svg>
   </span>
-</span><button type="button" class="cta desktop" onclick="goBook()">Reservar ahora</button></div></div></header>
+</span><button class="cta desktop" onclick="goBook()">Reservar ahora</button></div></div></header>
 
-<section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="pill">📍 Avilés · Castrillón · Soto del Barco · Muros de Nalón</span><h1 id="heroTitle">Fontanería fácil. <em>Reserva en minutos.</em></h1><p id="heroText">Pequeñas reparaciones e instalaciones en Avilés, Castrillón, Soto del Barco y Muros de Nalón. Elige el trabajo, solicita día y hora y espera nuestra confirmación.</p><div class="hero-actions"><button type="button" class="cta" onclick="goBook()">Reservar ahora</button><a class="outline" href="https://wa.me/34627128765" target="_blank" rel="noopener noreferrer" aria-label="Contactar con FlowFix por WhatsApp">WhatsApp</a></div></div><div class="hero-photo"><img src="hero-plumber.jpg" alt="Fontanero de FlowFix realizando una pequeña reparación" width="1200" height="800" fetchpriority="high" decoding="async"></div></div></section>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="pill">📍 Avilés · Castrillón · Soto del Barco · Muros de Nalón</span><h1 id="heroTitle">Fontanería fácil. <em>Reserva en minutos.</em></h1><p id="heroText">Pequeñas reparaciones e instalaciones en Avilés, Castrillón, Soto del Barco y Muros de Nalón. Elige el trabajo, solicita día y hora y espera nuestra confirmación.</p><div class="hero-actions"><button class="cta" onclick="goBook()">Reservar ahora</button><a class="outline" href="https://wa.me/34627128765" target="_blank">WhatsApp</a></div></div><div class="hero-photo"><img src="hero-plumber.jpg" alt="Fontanero de FlowFix realizando una pequeña reparación" width="1200" height="800" fetchpriority="high" decoding="async"></div></div></section>
 
-<section class="section soft" id="services"><div class="container"><div class="head"><h2 id="servicesTitle">Elige tu servicio</h2><p id="servicesSub">Precios claros. <a href="productos/index.html" style="color:var(--blue);font-weight:800">Ver productos disponibles →</a></p></div><div class="services" id="cards"></div><div class="assist"><div><strong>¿No tienes claro qué reparación necesitas?</strong><br><span style="color:var(--muted)">Envíanos una foto por WhatsApp y te orientamos.</span></div><button type="button" class="outline" onclick="chooseServicio(5)">Enviar foto por WhatsApp →</button></div></div></section>
+<section class="section soft" id="services"><div class="container"><div class="head"><h2 id="servicesTitle">Elige tu servicio</h2><p id="servicesSub">Precios claros.</p></div><div class="services" id="cards"></div><div class="assist"><div><strong>¿No tienes claro qué reparación necesitas?</strong><br><span style="color:var(--muted)">Envíanos una foto por WhatsApp y te orientamos.</span></div><button class="outline" onclick="chooseServicio(5)">Enviar foto por WhatsApp →</button></div></div></section>
 
 <section class="bookwrap" id="book"><div class="container"><div class="head"><h2 id="bookTitle">Solicita tu cita</h2><p>Elige fecha y hora. FlowFix confirma antes de la visita.</p></div><div class="booking"><div class="form"><div class="success" id="success"></div>
 
@@ -237,25 +219,29 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 
 <div class="field" id="removalWrap" style="display:none"><label id="removalLabel">Retirada opcional</label><div class="choices"><div class="choice active" id="noRemoval" onclick="setRemoval(false)"><strong>No</strong><br><small>Sin retirada</small></div><div class="choice" id="yesRemoval" onclick="setRemoval(true)"><strong>+ €20.00</strong><br><small>IVA incluido</small></div></div></div>
 
-<div class="field" id="productField"><label>2. Producto</label><div class="choices"><div class="choice active" id="own" onclick="setProducto('own')"><strong>Tengo el mío</strong><br><small>Tengo el mío</small></div><div class="choice" id="supply" onclick="setProducto('supply')"><strong>FlowFix lo suministra</strong><br><small>FlowFix lo suministra</small></div></div>
+<div class="field" id="productField"><label>2. Productoo</label><div class="choices"><div class="choice active" id="own" onclick="setProducto('own')"><strong>Tengo el mío</strong><br><small>Tengo el mío</small></div><div class="choice" id="supply" onclick="setProducto('supply')"><strong>FlowFix lo suministra</strong><br><small>FlowFix lo suministra</small></div></div>
 <div class="product-grid" id="productGrid" style="display:none"></div>
 <div class="notice" id="productNotice" style="display:none">Los precios de producto mostrados ya incluyen el margen FlowFix y el IVA. Precio y disponibilidad se reconfirman antes de comprar.</div></div>
 
 <div class="field"><label>3. Zona</label><select id="area"><option>Avilés</option><option>Castrillón</option><option>Soto del Barco</option><option>Muros de Nalón</option></select></div>
 <div class="notice">La cita queda pendiente hasta que FlowFix la confirme. Si no podemos ese horario, te proponemos otro.</div>
-<div class="two"><div class="field"><label>4. Fecha preferida</label><input id="date" type="date" required></div><div class="field"><label>Hora disponible</label><select id="time" required><option value="">Elige una fecha primero</option></select></div></div>
+<div class="two"><div class="field"><label>4. Fecha preferida</label><input id="date" type="date"></div><div class="field"><label>Hora disponible</label><select id="time"><option value="">Elige una fecha primero</option></select></div></div>
 <div class="notice" id="hoursNotice">Horario: lunes–viernes 09:30–18:00 · sábados y domingos cerrado. Los horarios confirmados desaparecen automáticamente.</div>
 
-<div class="two"><div class="field"><label>Nombre</label><input id="name" type="text" autocomplete="name" required></div><div class="field"><label>Teléfono</label><input id="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="Ej.: 627 128 765"></div></div>
-<div class="two"><div class="field"><label>Email</label><input id="email" type="email" inputmode="email" autocomplete="email" placeholder="Opcional"></div><div class="field"><label>Dirección</label><input id="address" type="text" autocomplete="street-address" required></div></div>
-<div class="field"><label>Describe el trabajo</label><textarea id="notes" autocomplete="off" placeholder="Ej.: el grifo de cocina gotea y quiero sustituirlo..."></textarea></div>
+<div class="two"><div class="field"><label>Nombre</label><input id="name" type="text" autocomplete="name"></div><div class="field"><label>Teléfono</label><input id="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Ej.: 627 128 765"></div></div>
+<div class="two"><div class="field"><label>Email</label><input id="email" type="email" inputmode="email" autocomplete="email" placeholder="Opcional"></div><div class="field"><label>Dirección</label><input id="address" type="text" autocomplete="street-address"></div></div>
+<div class="field"><label>Describe el trabajo</label><textarea id="notes" placeholder="Ej.: el grifo de cocina gotea y quiero sustituirlo..."></textarea></div>
 
+<div class="notice" style="background:#edf8f1;border-color:#b9e4d0;color:#145c41">
+<strong>✓  / </strong><br>
+Reserva ahora y paga únicamente cuando el trabajo esté terminado y el importe final haya sido confirmado.
+</div>
 <div class="wa"><strong>📍 WhatsApp</strong><br><span style="font-size:12px;color:#53677d">Después de enviar, puedes mandarnos ubicación y fotos por WhatsApp.</span></div>
 <div class="consent"><input id="privacy" type="checkbox"><label for="privacy">He leído la <a href="privacidad.html" target="_blank" style="color:#0b6efd;text-decoration:underline">Política de Privacidad</a> y autorizo el uso de mis datos para gestionar esta solicitud.</label></div>
-<button type="button" class="cta" style="width:100%;margin-top:14px" onclick="confirmBooking()">Enviar solicitud de cita</button>
+<button class="cta" style="width:100%;margin-top:14px" onclick="confirmBooking()">Enviar solicitud de cita</button>
 </div>
 
-<aside class="summary"><h3>Resumen</h3><div class="row"><span>Servicio</span><strong id="sumServicio">—</strong></div><div class="row"><span>Zona</span><strong id="sumZona">Avilés</strong></div><div class="row"><span>Instalación</span><strong id="sumPrice">€0</strong></div><div class="row" id="sumRemovalRow" style="display:none"><span>Retirada opcional</span><strong>€20.00</strong></div><div class="row"><span>Producto</span><strong id="sumProducto">Propio</strong></div><div class="row total"><span>Total instalación</span><span id="sumTotal">€0</span></div><p class="small">Todos los precios de instalación mostrados incluyen 21% IVA. Los productos suministrados por FlowFix se añaden aparte con precio final IVA incluido confirmado antes de comprar.</p></aside>
+<aside class="summary"><h3>Resumen / Resumen</h3><div class="row"><span>Servicio</span><strong id="sumServicio">—</strong></div><div class="row"><span>Zona</span><strong id="sumZona">Avilés</strong></div><div class="row"><span>Instalación</span><strong id="sumPrice">€0</strong></div><div class="row" id="sumRemovalRow" style="display:none"><span>Retirada opcional</span><strong>€20.00</strong></div><div class="row"><span>Productoo</span><strong id="sumProducto">Propio</strong></div><div class="row"><span>Pago</span><strong>Después del trabajo</strong></div><div class="row total"><span>Total instalación</span><span id="sumTotal">€0</span></div><p class="small">Todos los precios de instalación mostrados incluyen 21% IVA. Los productos suministrados por FlowFix se añaden aparte con precio final IVA incluido confirmado antes de comprar.</p></aside>
 
 </div></div></div></section>
 
@@ -269,17 +255,24 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
         <strong>Opiniones reales, no testimonios inventados</strong>
         <span style="color:var(--muted)">Publicaremos reseñas verificadas de clientes a medida que FlowFix complete trabajos.</span>
       </div>
-      <button type="button" class="outline" onclick="requestReview()">Dejar una opinión →</button>
+      <button class="outline" onclick="requestReview()">Dejar una opinión →</button>
     </div>
   </div>
 </section>
 
-
+<section class="section soft" id="payment-after">
+  <div class="container">
+    <div class="assist" style="margin-top:0;background:#fff">
+      <div>
+        <strong>Pago al finalizar el trabajo</strong><br>
+        <span style="color:var(--muted)">Puedes pagar con tarjeta mediante enlace seguro, Bizum o efectivo.</span>
+      </div>
+      <button class="outline" onclick="requestPagoLink()">Pago de trabajo terminado →</button>
+    </div>
+  </div>
+</section>
 <footer><div class="container foot"><div><h4>FLOWFIX</h4><p>Fontanería para pequeños trabajos en Avilés, Castrillón, Soto del Barco y Muros de Nalón.</p><p><strong>Titular:</strong> Paul David Adamson<br><strong>NIF:</strong> Y1582641W<br><strong>Domicilio:</strong> El Reguero 95, Bajo, Las Barzanas, 33456, Asturias, España</p></div><div><h4>Contacto</h4><p><a href="tel:+34627128765">+34 627 128 765</a><br><a href="https://wa.me/34627128765">WhatsApp</a><br>Bizum: 627 128 765<br>Tarjeta: enlace seguro después del trabajo<br><a href="mailto:info@flowfix.es">info@flowfix.es</a><br><a href="https://www.flowfix.es">www.flowfix.es</a></p></div><div><h4>Legal</h4><p><a href="aviso-legal.html">Aviso legal</a><br><a href="privacidad.html">Privacidad</a><br><a href="cookies.html">Cookies</a><br><a href="condiciones.html">Condiciones</a></p></div></div></footer>
-<div class="mobile"><div class="mobile-bar">
-<a class="outline" href="tel:+34627128765" aria-label="Llamar a FlowFix">Llamar</a>
-<button type="button" class="cta" onclick="goBook()">Reservar ahora</button>
-</div></div>
+<div class="mobile"><button class="cta" onclick="goBook()">Reservar ahora</button></div>
 
 <script>
 const FLOWFIX_WHATSAPP='34627128765';
@@ -345,12 +338,10 @@ let lang='es',idx=0,pm='own',tier='better',removal=false,ref=null;
 
 const cards=document.getElementById('cards'),service=document.getElementById('service');
 SERVICES.forEach((s,i)=>{
- cards.innerHTML+=`<article class="service" onclick="chooseServicio(${i})"><img src="${s.img}" alt="${s.es}" loading="lazy" decoding="async" width="480" height="400"><div class="service-body"><h3 id="svcName${i}">${s.es}</h3><p id="svcDesc${i}">${s.descEs}</p><div class="from">Desde</div><div class="price">€${(s.base*1.21).toFixed(2)}${i===5?'+':''}</div><div class="vat">IVA incluido</div></div></article>`;
+ cards.innerHTML+=`<article class="service" onclick="chooseServicio(${i})"><img src="${s.img}" alt="${s.es}" loading="lazy" decoding="async"><div class="service-body"><h3 id="svcName${i}">${s.es}</h3><p id="svcDesc${i}">${s.descEs}</p><div class="from">Desde</div><div class="price">€${(s.base*1.21).toFixed(2)}${i===5?'+':''}</div><div class="vat">IVA incluido</div></div></article>`;
  service.innerHTML+=`<option value="${i}">${s.es}</option>`;
 });
-const todayLocal=new Date();
-todayLocal.setMinutes(todayLocal.getMinutes()-todayLocal.getTimezoneOffset());
-date.min=todayLocal.toISOString().slice(0,10);
+date.min=new Date().toISOString().slice(0,10);
 date.addEventListener('change',loadAvailability);
 service.addEventListener('change',loadAvailability);
 service.onchange=()=>{idx=+service.value;refresh()};
@@ -370,7 +361,7 @@ function renderProductos(){
    const link=SERVICES[idx].heater?x[5]:x[6];
    const price=flowfixProductoPrice(retail);
    productGrid.innerHTML+=`<div class="product-card ${level===tier?'active':''}" data-level="${level}" onclick="setTier('${level}')">
-     <img class="product-photo" src="${image}" alt="${model}" loading="lazy" decoding="async" width="520" height="390">
+     <img class="product-photo" src="${image}" alt="${model}" loading="lazy" decoding="async">
      <div class="pcopy">
        <div class="level">${level.toUpperCase()}${level==='better'?' ⭐':''}</div>
        <div class="model">${model}</div>
@@ -391,7 +382,7 @@ function refresh(){
  const s=SERVICES[idx];
  heaterWrap.style.display=s.heater?'block':'none';
  removalWrap.style.display=s.removal?'block':'none';
- removalLabel.textContent='Retirada del termo antiguo';
+ removalLabel.textContent='Retirada del termo antiguo / Old heater removal';
  supply.style.display=s.product?'block':'none';
  productField.style.display=s.product?'block':'none';
  if(!s.product){pm='own';productGrid.style.display='none';productNotice.style.display='none'}
@@ -400,9 +391,9 @@ function refresh(){
 }
 function refreshResumen(){
  const s=SERVICES[idx],ip=installPrice();
- sumServicio.textContent=s.es;sumZona.textContent=area.value;sumPrice.textContent='€'+ip.toFixed(2)+' IVA incl.';
+ sumServicio.textContent=lang==='es'?s.es:s.en;sumZona.textContent=area.value;sumPrice.textContent='€'+ip.toFixed(2)+' IVA incl.';
  sumRemovalRow.style.display=(s.removal&&removal)?'flex':'none';
- let prodPrice=0,prodName='Propio';
+ let prodPrice=0,prodName=lang==='es'?'Propio':'Propio';
  if(pm==='supply'){const x=currentProductos().find(a=>a[0]===tier)||currentProductos()[0];if(x){prodPrice=flowfixProductoPrice(SERVICES[idx].heater?+x[3]:+x[4]);prodName=x[1]+' · €'+prodPrice.toFixed(2)}}
  sumProducto.textContent=prodName;
   sumTotal.textContent='€'+(ip+prodPrice+(s.removal&&removal?20:0)).toFixed(2);
@@ -433,20 +424,17 @@ async function loadAvailability(){
 
 function bookingRef(){if(!ref)ref='FF-'+Math.floor(100000+Math.random()*900000);return ref}
 function confirmBooking(){
- for(const id of ['date','time','name','phone','address']){
-  const el=document.getElementById(id);
-  if(!el.value){alert('Completa los campos obligatorios.');el.focus();return}
- }
+ for(const id of ['date','name','phone','address'])if(!document.getElementById(id).value){alert('Completa los campos obligatorios.');return}
  if(!privacy.checked){alert('Debes aceptar la Política de Privacidad.');return}
- const r=bookingRef(),s=SERVICES[idx],serviceName=s.es,remText=(s.removal&&removal)?'Sí — €20':'No';
- let prodText=lang==='es'?'Producto propio':'Propio product';
+ const r=bookingRef(),s=SERVICES[idx],serviceName=lang==='es'?s.es:s.en,remText=(s.removal&&removal)?'Sí / Yes — €20':'No';
+ let prodText=lang==='es'?'Productoo propio':'Propio product';
  if(pm==='supply'){const x=currentProductos().find(a=>a[0]===tier)||currentProductos()[0];if(x)prodText=`FlowFix — ${x[1]} — €${flowfixProductoPrice(SERVICES[idx].heater?+x[3]:+x[4]).toFixed(2)} IVA incl.`;}
- const payText='';
+ const payText=lang==='es'?' — pago al finalizar':' — pay after completion';
  const msg=lang==='es'
- ?`Hola FlowFix. Quiero solicitar una cita.\n\nReferencia: ${r}\nServicio: ${serviceName}\nZona: ${area.value}\nFecha preferida: ${date.value}\nHora preferida: ${time.value}\nProducto: ${prodText}\nRetirada opcional: ${remText}\nPago: ${payText}\nNombre: ${name.value}\nTeléfono: ${phone.value}\nDirección: ${address.value}\nDetalles: ${notes.value||'—'}\n\nPuedo enviar ubicación exacta y fotos por este chat.`
+ ?`Hola FlowFix. Quiero solicitar una cita.\n\nReferencia: ${r}\nServicio: ${serviceName}\nZona: ${area.value}\nFecha preferida: ${date.value}\nHora preferida: ${time.value}\nProductoo: ${prodText}\nRetirada opcional: ${remText}\nPago: ${payText}\nNombre: ${name.value}\nTeléfono: ${phone.value}\nDirección: ${address.value}\nDetalles: ${notes.value||'—'}\n\nPuedo enviar ubicación exacta y fotos por este chat.`
  :`Hello FlowFix. I would like to request an appointment.\n\nReference: ${r}\nServicio: ${serviceName}\nZona: ${area.value}\nPreferred date: ${date.value}\nPreferred time: ${time.value}\nProducto: ${prodText}\nOptional removal: ${remText}\nPago: ${payText}\nName: ${name.value}\nPhone: ${phone.value}\nAddress: ${address.value}\nDetails: ${notes.value||'—'}\n\nI can send my exact location and photos in this chat.`;
  window.open(`https://wa.me/${FLOWFIX_WHATSAPP}?text=${encodeURIComponent(msg)}`,'_blank');
- success.style.display='block';success.textContent='Solicitud preparada — '+r+'. Envíala por WhatsApp y FlowFix confirmará la cita.';
+ success.style.display='block';success.textContent=(lang==='es'?'Solicitud preparada':'Request prepared')+' — '+r+'. '+(lang==='es'?'Envíala por WhatsApp y FlowFix confirmará la cita.':'Send it on WhatsApp and FlowFix will confirm the appointment.');
  success.scrollIntoView({behavior:'smooth'});
 }
 

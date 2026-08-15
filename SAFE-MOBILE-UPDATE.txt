@@ -1,0 +1,9 @@
+This version was rebuilt from the last known working product-pages site.
+Only safe mobile changes were applied:
+- larger touch controls
+- 16px form inputs to prevent iPhone zoom
+- phone/email autocomplete and mobile keyboards
+- responsive spacing/cards
+- lazy-loading for non-critical images
+- hero image prioritisation
+No JavaScript function/variable names were changed.
